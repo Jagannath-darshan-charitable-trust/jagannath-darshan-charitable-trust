@@ -81,7 +81,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-secondary-foreground/10 pt-6 text-center font-body text-xs text-secondary-foreground/50">
           <p>© {new Date().getFullYear()} Jagannath Darshan Charitable Trust. All rights reserved.</p>
-          <p className="mt-1">🙏 Jai Jagannath 🙏</p>
+          <p className="mt-1"> Jai Jagannath </p>
         </div>
       </div>
     </footer>

@@ -1,13 +1,26 @@
 import { ArrowRight, Heart, MapPin, Clock, Calendar, HandHeart, CheckCircle2, Utensils } from "lucide-react";
 import { Link } from "react-router-dom";
-import gosalaImage from "@/assets/gosala.jpg";
-import galleryGosala from "@/assets/gallery-gosala.jpg";
+import gosalaImage from "@/assets/Gosala5.webp";
+import gosala6 from "@/assets/Gosala6.webp";
+import gosala7 from "@/assets/Gosala7.webp";
+import gosala8 from "@/assets/Gosala8.webp";
+import gosala9 from "@/assets/Gosala9.webp";
+import gosala10 from "@/assets/Gosala10.webp";
+import gosala11 from "@/assets/Gosala11.webp";
+import gosala12 from "@/assets/Gosala12.webp";
+import gosala13 from "@/assets/Gosala13.webp";
+import gosala14 from "@/assets/Gosala14.webp";
 
-// Reusing existing images for now, effectively a filtered view
 const galleryImages = [
-  { src: galleryGosala, alt: "Caring for cows", caption: "Daily Care" },
-  { src: gosalaImage, alt: "Gosala environment", caption: "Safe Shelter" },
-  // Ideally we would have more specific Gosala images here
+  { src: gosala6, alt: "Cows grazing in the Gosala", caption: "Open Grazing" },
+  { src: gosala7, alt: "Feeding the cows", caption: "Daily Feeding" },
+  { src: gosala8, alt: "Healthy cows at the shelter", caption: "Healthy & Happy" },
+  { src: gosala9, alt: "Calves at the Gosala", caption: "Young Calves" },
+  { src: gosala10, alt: "Veterinary care for cows", caption: "Medical Care" },
+  { src: gosala11, alt: "Cow shed at Gosala", caption: "Safe Shelter" },
+  { src: gosala12, alt: "Sevaks caring for cows", caption: "Seva in Action" },
+  { src: gosala13, alt: "Cows resting peacefully", caption: "Peaceful Rest" },
+  { src: gosala14, alt: "Evening Feeding at Gosala", caption: "Evening Feeding" },
 ];
 
 const Gosala = () => {
@@ -82,18 +95,9 @@ const Gosala = () => {
       <section className="section-padding">
         <div className="container-trust">
           <h2 className="mb-8 text-center font-heading text-2xl font-bold text-foreground md:text-3xl">Glimpses of Gosala</h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-             {/* Using a placeholder repetition for gallery effect since we have limited unique assets currently */}
+          <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">
             {galleryImages.map((img, i) => (
               <div key={i} className="group relative overflow-hidden rounded-xl shadow-md">
-                <img src={img.src} alt={img.alt} className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                <p className="absolute bottom-4 left-4 font-heading text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">{img.caption}</p>
-              </div>
-            ))}
-             {/* Duplicating for layout demo */}
-            {galleryImages.map((img, i) => (
-               <div key={`dup-${i}`} className="group relative overflow-hidden rounded-xl shadow-md hidden md:block">
                 <img src={img.src} alt={img.alt} className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <p className="absolute bottom-4 left-4 font-heading text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">{img.caption}</p>

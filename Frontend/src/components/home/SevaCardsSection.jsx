@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Heart, Utensils, Landmark, ArrowRight } from "lucide-react";
-import gosalaImage from "@/assets/gosala.jpg";
+import gosalaImage from "@/assets/Gosala2.webp";
 import annabhandarImage from "@/assets/annabhandar.jpg";
 import mandirImage from "@/assets/Mandir2.webp";
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import heroImage1 from "@/assets/hero-temple.jpg";
+import heroImage1 from "@/assets/Gosala1.webp";
 import heroImage2 from "@/assets/annabhandar.jpg";
 import heroImage3 from "@/assets/Mandir11.webp";
 
@@ -12,7 +12,7 @@ const HeroSection = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % heroImages.length);
-    }, 2000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 px-4 text-center" style={{ zIndex: 2 }}>
         <p className="mb-4 animate-fade-in font-body text-sm font-medium uppercase tracking-[0.2em] text-accent">
-          🙏 Jai Jagannath 🙏
+           Jai Jagannath 
         </p>
         <h1 className="mx-auto max-w-4xl animate-fade-in-up font-heading text-3xl font-bold leading-tight text-primary-foreground md:text-5xl lg:text-6xl">
           Seva to Gau Mata, Annavandar Seva & All India Jagannath Mandir Nirman for Sanatan Dharma

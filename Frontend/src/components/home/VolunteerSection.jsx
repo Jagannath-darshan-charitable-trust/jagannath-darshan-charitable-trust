@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import { Users, Heart, MapPin } from "lucide-react";
-import volunteersImage from "@/assets/volunteers.jpg";
+import volunteersImage from "@/assets/Volunteers.webp";
 
 const VolunteerSection = () => (
   <section className="section-padding">
     <div className="container-trust">
       <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-md">
-        <div className="grid items-center md:grid-cols-2">
-          <div className="h-64 md:h-full">
+        <div className="grid items-stretch md:grid-cols-2">
+          <div className="relative min-h-[240px] md:min-h-[320px]">
             <img
               src={volunteersImage}
               alt="Trust volunteers and sevaks"
-              className="h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"
             />
           </div>

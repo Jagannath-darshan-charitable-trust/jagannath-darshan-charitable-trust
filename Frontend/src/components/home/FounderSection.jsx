@@ -1,4 +1,4 @@
-import founderImage from "@/assets/founder.jpg";
+import founderImage from "@/assets/Founder.webp";
 
 const FounderSection = () => (
   <section className="section-padding bg-muted/50">

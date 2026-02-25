@@ -1,7 +1,7 @@
-import galleryGosala from "@/assets/gallery-gosala.jpg";
+import galleryGosala from "@/assets/Gosala4.webp";
 import galleryAnnabhandar from "@/assets/gallery-annabhandar.jpg";
 import galleryMandir from "@/assets/Mandir3.webp";
-import gosalaImage from "@/assets/gosala.jpg";
+import gosalaImage from "@/assets/Gosala3.webp";
 import annabhandarImage from "@/assets/annabhandar.jpg";
 import mandirImage from "@/assets/Mandir5.webp";
 

@@ -1,6 +1,6 @@
 import { ShieldCheck, Eye, Heart, Users, FileText, Download, Star, Globe, BookOpen } from "lucide-react";
-import founderImage from "@/assets/founder.jpg";
-import volunteersImage from "@/assets/volunteers.jpg";
+import founderImage from "@/assets/Founder.webp";
+import volunteersImage from "@/assets/Volunteers.webp";
 
 const milestones = [
   { year: "2023", event: "Trust founded — devoted to preserving the living traditions of Lord Jagannath" },
@@ -152,8 +152,10 @@ const AboutTrust = () => {
       <section className="section-padding">
         <div className="container-trust">
           <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-border shadow-md">
-            <div className="grid md:grid-cols-2">
-              <img src={volunteersImage} alt="Our volunteers" className="h-64 w-full object-cover md:h-full" loading="lazy" />
+            <div className="grid items-stretch md:grid-cols-2">
+              <div className="relative min-h-[240px] md:min-h-[320px]">
+                <img src={volunteersImage} alt="Our volunteers" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              </div>
               <div className="flex flex-col justify-center p-8">
                 <h2 className="mb-3 font-heading text-2xl font-bold text-foreground">Our Sevak Family</h2>
                 <p className="mb-4 font-body text-sm leading-relaxed text-muted-foreground">
