@@ -7,9 +7,6 @@ import galleryMandir9 from "@/assets/Mandir9.webp";
 import galleryMandir10 from "@/assets/Mandir10.webp";
 import galleryMandir1 from "@/assets/Mandir1.webp";
 import galleryMandir4 from "@/assets/Mandir4.webp";
-
-
-
 // Gallery images for construction updates
 const galleryImages = [
   { src: galleryMandir7, alt: "Temple Construction", caption: "Construction in Progress" },
@@ -19,7 +16,6 @@ const galleryImages = [
   { src: galleryMandir1, alt: "Temple Foundation", caption: "Temple Foundation" },
   { src: galleryMandir4, alt: "Temple Foundation", caption: "Temple Renovation" },
 ];
-
 const MandirNirman = () => {
   return (
     <div>
@@ -39,17 +35,17 @@ const MandirNirman = () => {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="space-y-4">
               <div className="overflow-hidden rounded-xl shadow-lg">
-                <img src={mandirImage} alt="Mandir Nirman" className="h-86 w-full object-cover" />
+                <img src={mandirImage} alt="Mandir Nirman" className="h-96 w-full object-cover" />
               </div>
             </div>
             <div>
               <h2 className="mb-4 font-heading text-2xl font-bold text-foreground md:text-3xl">
                 A Divine Mission
               </h2>
-              <p className="mb-4 font-body text-base leading-relaxed text-muted-foreground text-justify">
+              <p className="mb-4 font-body text-base leading-relaxed text-muted-foreground text-left md:text-justify">
                 Temples are the heart of our culture and spirituality. The Jagannath Darshan Charitable Trust is dedicated to constructing Lord Jagannath temples across India to provide spiritual centers for devotees. Each temple will serve as a hub for cultural education, annadanam, and community service.
               </p>
-              <p className="mb-6 font-body text-base leading-relaxed text-muted-foreground text-justify">
+              <p className="mb-6 font-body text-base leading-relaxed text-muted-foreground text-left md:text-justify">
                 Our vision is to build <strong className="text-foreground">108 temples</strong> in the coming years. Currently, construction is underway at 15 locations, thanks to the generous support of devotees like you.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -66,7 +62,6 @@ const MandirNirman = () => {
           </div>
         </div>
       </section>
-
       {/* Current Projects */}
       <section className="section-padding bg-muted/50">
         <div className="container-trust">
@@ -138,7 +133,7 @@ const MandirNirman = () => {
         <div className="container-trust">
           <div className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12 text-center">
              <h2 className="mb-4 font-heading text-2xl font-bold text-foreground">Leave a Legacy</h2>
-             <p className="mx-auto mb-8 max-w-2xl font-body text-sm leading-relaxed text-muted-foreground">
+             <p className="mx-auto mb-8 max-w-2xl font-body text-sm leading-relaxed text-muted-foreground text-left md:text-center">
                Your contribution to the temple construction is a service to God and humanity. It is an opportunity to be part of something that will last for centuries.
              </p>
              <Link to="/donate" className="inline-flex items-center gap-2 rounded-lg bg-cta px-8 py-3 font-body text-sm font-semibold text-cta-foreground transition hover:bg-cta/90 shadow-md">

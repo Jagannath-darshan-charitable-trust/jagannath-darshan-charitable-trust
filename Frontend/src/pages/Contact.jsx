@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "How is my donation utilized?",
-    a: "We maintain complete transparency — 35% goes to Gosala (cow feed & medical care), 30% to Annabhandar (daily Mahaprasad), 25% to Mandir Nirman (temple construction), and 10% to administration. Annual audit reports are publicly available.",
+    a: "We maintain complete transparency - 35% goes to Gosala (cow feed & medical care), 30% to Annabhandar (daily Mahaprasad), 25% to Mandir Nirman (temple construction), and 10% to administration. Annual audit reports are publicly available.",
   },
 ];
 
@@ -34,8 +34,8 @@ const Contact = () => {
     <div>
       {/* Hero */}
       <section className="bg-primary py-16 text-center">
-        <h1 className="font-heading text-3xl font-bold text-primary-foreground md:text-4xl">Contact Us</h1>
-        <p className="mt-2 font-body text-primary-foreground/80">We'd love to hear from you</p>
+        <h1 className="font-heading text-2xl font-bold text-primary-foreground sm:text-3xl md:text-4xl">Contact Us</h1>
+        <p className="mt-2 px-4 font-body text-sm text-primary-foreground/80 md:text-base">We'd love to hear from you</p>
       </section>
 
       {/* Contact Info + Form (unchanged layout) */}
@@ -47,7 +47,7 @@ const Contact = () => {
               <h2 className="mb-6 font-heading text-2xl font-bold text-foreground">Get in Touch</h2>
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, title: "Address", text: "Jagannath Darshan Charitable Trust, Grand Road, Puri, Odisha — 752001, India" },
+                  { icon: MapPin, title: "Address", text: "Jagannath Darshan Charitable Trust, Grand Road, Puri, Odisha - 752001, India" },
                   { icon: Phone, title: "Phone", text: "+91 XXXXX XXXXX" },
                   { icon: Mail, title: "Email", text: "info@jaganathsevatrust.org" },
                   { icon: Clock, title: "Office Hours", text: "Mon – Sat: 9:00 AM – 6:00 PM" },
@@ -134,7 +134,7 @@ const Contact = () => {
         <div className="container-trust">
           <h2 className="mb-3 text-center font-heading text-2xl font-bold text-foreground md:text-3xl">How Can We Help?</h2>
           <p className="mx-auto mb-10 max-w-xl text-center font-body text-sm text-muted-foreground">
-            Whether you want to serve, support, or simply connect — we're here for you. Choose what best describes your inquiry:
+            Whether you want to serve, support, or simply connect - we're here for you. Choose what best describes your inquiry:
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {inquiryTypes.map((item) => (
@@ -212,10 +212,10 @@ const Contact = () => {
           <MessageCircle className="mx-auto mb-4" size={36} />
           <h2 className="mb-3 font-heading text-2xl font-bold md:text-3xl">We Value Your Voice</h2>
           <p className="mx-auto mb-4 max-w-lg font-body text-sm leading-relaxed opacity-90">
-            Every message matters to us — whether it's a question, a suggestion, or words of encouragement. Our team typically responds within 24 hours. Your seva and support keep this mission alive.
+            Every message matters to us - whether it's a question, a suggestion, or words of encouragement. Our team typically responds within 24 hours. Your seva and support keep this mission alive.
           </p>
           <p className="font-body text-xs italic opacity-80">
-            "सेवा ही सबसे बड़ी पूजा है" — Service is the highest form of worship.
+            "सेवा ही सबसे बड़ी पूजा है" - Service is the highest form of worship.
           </p>
         </div>
       </section>

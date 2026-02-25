@@ -1,13 +1,21 @@
 import { ArrowRight, Utensils, MapPin, Clock, Calendar, Heart, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import annabhandarImage from "@/assets/annabhandar.jpg";
-import galleryAnnabhandar from "@/assets/gallery-annabhandar.jpg";
+import annabhandarImage from "@/assets/Annabhandar3.webp";
+import annabhandar1 from "@/assets/Annabhandar1.webp";
+import annabhandar7 from "@/assets/Annabhandar7.webp";
+import annabhandar8 from "@/assets/Annabhandar8.webp";
+import annabhandar9 from "@/assets/Annabhandar9.webp";
+import annabhandar10 from "@/assets/Annabhandar10.webp";
+import annabhandar11 from "@/assets/Annabhandar11.webp";
 
-// Reusing existing images for now
+// Gallery images for Anna Seva
 const galleryImages = [
-  { src: galleryAnnabhandar, alt: "Serving Mahaprasad", caption: "Serving Devotees" },
-  { src: annabhandarImage, alt: "Community Kitchen", caption: "Community Kitchen" },
-  // Placeholder for more images
+  { src: annabhandar1, alt: "Serving Mahaprasad", caption: "Sacred Distribution" },
+  { src: annabhandar7, alt: "Meal preparation", caption: "Kitchen Seva" },
+  { src: annabhandar8, alt: "Devotees taking parsad", caption: "Feeding Souls" },
+  { src: annabhandar9, alt: "Traditional leaf serving", caption: "Satvik Tradition" },
+  { src: annabhandar10, alt: "Community Bhandara", caption: "Community Meals" },
+  { src: annabhandar11, alt: "Mahaprasad diversity", caption: "Wholesome Meals" },
 ];
 
 const Annabhandar = () => {
@@ -50,7 +58,7 @@ const Annabhandar = () => {
             </div>
             <div className="order-1 space-y-4 md:order-2">
               <div className="overflow-hidden rounded-xl shadow-lg">
-                <img src={annabhandarImage} alt="Annabhandar" className="h-64 w-full object-cover" />
+                <img src={annabhandarImage} alt="Annabhandar" className="h-96 w-full object-cover" />
               </div>
             </div>
           </div>
@@ -90,14 +98,6 @@ const Annabhandar = () => {
               <div key={i} className="group relative overflow-hidden rounded-xl shadow-md">
                 <img src={img.src} alt={img.alt} className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                <p className="absolute bottom-4 left-4 font-heading text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">{img.caption}</p>
-              </div>
-            ))}
-             {/* Duplicating for layout demo */}
-            {galleryImages.map((img, i) => (
-               <div key={`dup-${i}`} className="group relative overflow-hidden rounded-xl shadow-md hidden md:block">
-                <img src={img.src} alt={img.alt} className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 <p className="absolute bottom-4 left-4 font-heading text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">{img.caption}</p>
               </div>
             ))}

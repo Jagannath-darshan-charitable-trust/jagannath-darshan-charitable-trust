@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Heart, Utensils, Landmark, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 import gosalaImage from "@/assets/Gosala5.webp";
-import annabhandarImage from "@/assets/annabhandar.jpg";
+import annabhandarImage from "@/assets/Annabhandar3.webp";
 import mandirImage from "@/assets/Mandir6.webp";
 
 
@@ -10,10 +10,10 @@ const OurSeva = () => {
     <div>
       {/* Page Header */}
       <section className="bg-primary py-16 text-center">
-        <h1 className="font-heading text-3xl font-bold text-primary-foreground md:text-4xl">
+        <h1 className="font-heading text-2xl font-bold text-primary-foreground sm:text-3xl md:text-4xl">
           Our Seva
         </h1>
-        <p className="mt-2 font-body text-primary-foreground/80">
+        <p className="mt-2 px-4 font-body text-sm text-primary-foreground/80 md:text-base">
           Three pillars of selfless service for Sanatan Dharma
         </p>
       </section>
@@ -51,14 +51,14 @@ const OurSeva = () => {
                 <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Gosala</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Cow Protection & Care</p>
-              <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground">
+              <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
                 Our Gosala provides shelter, nutritious food, medical care, and a loving environment
                 for abandoned, injured, and aging cows. Every life is sacred, and protecting Gau Mata
                 is our dharmic duty. Currently caring for <strong className="text-foreground">1,200+ cows</strong> across multiple centers.
               </p>
               <ul className="mb-6 space-y-2">
                 {[
-                  "Cow Adoption Program — ₹1,500/month",
+                  "Cow Adoption Program - ₹1,500/month",
                   "Monthly Cow Care Donation",
                   "Transparent Expense Breakdown",
                   "Medical Care & Veterinary Support",
@@ -90,9 +90,9 @@ const OurSeva = () => {
                 <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Annabhandar</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Mahaprasad Distribution</p>
-              <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground">
+              <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
                 Sacred Mahaprasad is distributed daily to thousands of devotees and underprivileged
-                families. No one should go hungry — this is the essence of Anna Seva. Our kitchens 
+                families. No one should go hungry - this is the essence of Anna Seva. Our kitchens 
                 serve wholesome meals with love, devotion, and purity.
               </p>
 
@@ -110,8 +110,8 @@ const OurSeva = () => {
 
               <ul className="mb-6 space-y-2">
                 {[
-                  "Sponsor One Meal — ₹50",
-                  "Sponsor One Day Meals — ₹5,000",
+                  "Sponsor One Meal - ₹50",
+                  "Sponsor One Day Meals - ₹5,000",
                   "Monthly Meal Sponsorship",
                   "Festival Special Bhandara",
                   "Corporate Sponsorship Options",
@@ -148,7 +148,7 @@ const OurSeva = () => {
                 <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Mandir Nirman</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Jagannath Temple Construction</p>
-              <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground">
+              <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
                 We are building Jagannath temples across India to spread the divine message of Lord Jagannath.
                 Each temple becomes a beacon of faith, culture, and community service. Currently 
                 <strong className="text-foreground"> 15 temples</strong> are under construction across India.
@@ -168,8 +168,8 @@ const OurSeva = () => {
 
               <ul className="mb-6 space-y-2">
                 {[
-                  "Brick Donation — ₹501",
-                  "Pillar Donation — ₹11,000",
+                  "Brick Donation - ₹501",
+                  "Pillar Donation - ₹11,000",
                   "Construction Stage Updates",
                   "Naming Recognition for Major Donors",
                   "Monthly Progress Reports with Photos",
@@ -197,7 +197,7 @@ const OurSeva = () => {
             Every Seva Counts
           </h2>
           <p className="mx-auto mb-6 max-w-2xl font-body text-sm text-primary-foreground/80">
-            Whether you sponsor a cow, feed a hungry soul, or lay a brick for the Lord's temple — 
+            Whether you sponsor a cow, feed a hungry soul, or lay a brick for the Lord's temple - 
             your contribution creates ripples of blessings across generations.
           </p>
           <Link

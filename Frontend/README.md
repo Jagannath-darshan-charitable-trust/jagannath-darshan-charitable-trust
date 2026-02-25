@@ -4,12 +4,12 @@ A web application for Jagannath Darshan Charitable Trust built with React, Vite,
 
 ## Tech Stack
 
-- **React** — UI framework
-- **Vite** — Build tool and dev server
-- **shadcn/ui** — Component library
-- **Tailwind CSS** — Utility-first CSS framework
-- **React Router** — Client-side routing
-- **React Query** — Data fetching and caching
+- **React** - UI framework
+- **Vite** - Build tool and dev server
+- **shadcn/ui** - Component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **React Query** - Data fetching and caching
 
 ## Getting Started
 

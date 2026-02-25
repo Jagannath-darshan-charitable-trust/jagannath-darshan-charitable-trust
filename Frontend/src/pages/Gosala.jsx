@@ -22,7 +22,6 @@ const galleryImages = [
   { src: gosala13, alt: "Cows resting peacefully", caption: "Peaceful Rest" },
   { src: gosala14, alt: "Evening Feeding at Gosala", caption: "Evening Feeding" },
 ];
-
 const Gosala = () => {
   return (
     <div>
@@ -35,7 +34,6 @@ const Gosala = () => {
           Serving Gau Mata with Love and Devotion
         </p>
       </section>
-
       {/* About Section */}
       <section className="section-padding">
         <div className="container-trust">

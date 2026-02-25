@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Heart, Utensils, Landmark, ShieldCheck, CreditCard, HandHeart, Users, CheckCircle2, TrendingUp, FileText, IndianRupee } from "lucide-react";
+import DonateUs from "@/assets/DonateUs.webp";
 
 const purposes = [
   { value: "gosala", label: "Gosala - Cow Protection", icon: Heart },
-  { value: "annabhandar", label: "Annabhandar — Food Distribution", icon: Utensils },
-  { value: "mandir", label: "Mandir Nirman — Temple Construction", icon: Landmark },
+  { value: "annabhandar", label: "Annabhandar - Food Distribution", icon: Utensils },
+  { value: "mandir", label: "Mandir Nirman - Temple Construction", icon: Landmark },
   { value: "general", label: "General Trust Fund", icon: ShieldCheck },
 ];
 
@@ -24,14 +25,14 @@ const whyDonateReasons = [
   {
     icon: Landmark,
     title: "Build Sacred Temples",
-    desc: "Help construct Jagannath Mandirs across India — beacons of dharma, faith, and cultural continuity for generations.",
+    desc: "Help construct Jagannath Mandirs across India - beacons of dharma, faith, and cultural continuity for generations.",
   },
 ];
 
 const donationUsage = [
-  { label: "Gosala — Cow Feed & Medical Care", percent: 35, color: "bg-primary" },
-  { label: "Annabhandar — Food & Kitchen Supplies", percent: 30, color: "bg-accent" },
-  { label: "Mandir Nirman — Construction & Materials", percent: 25, color: "bg-cta" },
+  { label: "Gosala - Cow Feed & Medical Care", percent: 35, color: "bg-primary" },
+  { label: "Annabhandar - Food & Kitchen Supplies", percent: 30, color: "bg-accent" },
+  { label: "Mandir Nirman - Construction & Materials", percent: 25, color: "bg-cta" },
   { label: "Administration & Operations", percent: 10, color: "bg-muted-foreground" },
 ];
 
@@ -52,10 +53,43 @@ const Donate = () => {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="bg-primary py-16 text-center">
-        <h1 className="font-heading text-3xl font-bold text-primary-foreground md:text-4xl">Make a Donation</h1>
-        <p className="mt-2 font-body text-primary-foreground/80">Every contribution is a step towards divine service</p>
+      
+      {/* Featured Impact Section - Refined Full-Width Layout */}
+      <section className="relative overflow-hidden bg-card">
+        <div className="relative h-[450px] w-full md:h-[550px]">
+          {/* Background Image */}
+          <img 
+            src={DonateUs} 
+            alt="Divine Service in Action" 
+            className="h-full w-full object-cover" 
+          />
+          
+          {/* Gradient Overlay for Legibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/40 to-transparent" />
+          
+          {/* Content Overlay */}
+          <div className="container-trust absolute inset-0 flex items-center">
+            <div className="max-w-xl px-4 text-primary-foreground md:px-0">
+              <h2 className="mb-4 font-heading text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+                A Mission of <br className="hidden md:block" /> Selfless Service
+              </h2>
+              <p className="mb-6 font-body text-base leading-relaxed opacity-90 md:text-lg">
+                Service to humanity is service to God. At Jagannath Darshan Charitable Trust, your contributions 
+                directly impact the lives of thousands. Every act of giving creates a ripple of blessings that 
+                reaches beyond the immediate moment, preserving dharma for generations to come.
+              </p>
+              <p className="mb-8 hidden font-body text-base leading-relaxed opacity-90 md:block">
+                Whether it is providing shelter to abandoned cows, distributing sacred Mahaprasad, or building 
+                temples that stand as beacons of faith, your support is the foundation of our work. We invite 
+                you to be a part of this journey toward selfless service (Seva).
+              </p>
+              <div className="flex items-center gap-3 text-cta">
+                <HandHeart size={28} />
+                <span className="font-heading text-xl font-semibold italic">"Seva Param Dharmah"</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Why Donate Section */}
@@ -63,7 +97,7 @@ const Donate = () => {
         <div className="container-trust">
           <h2 className="mb-3 text-center font-heading text-2xl font-bold text-foreground md:text-3xl">Why Donate to Us?</h2>
           <p className="mx-auto mb-10 max-w-2xl text-center font-body text-sm leading-relaxed text-muted-foreground">
-            Your generosity fuels real, on-ground seva — from caring for Gau Mata and feeding the hungry to constructing temples that will stand for centuries. Here's where your contribution makes an impact:
+            Your generosity fuels real, on-ground seva - from caring for Gau Mata and feeding the hungry to constructing temples that will stand for centuries. Here's where your contribution makes an impact:
           </p>
           <div className="grid gap-6 md:grid-cols-3">
             {whyDonateReasons.map((r) => (
@@ -272,7 +306,7 @@ const Donate = () => {
                 <div>
                   <h4 className="font-body text-sm font-semibold text-foreground">Our Promise to You</h4>
                   <p className="mt-1 font-body text-sm text-muted-foreground">
-                    Every donation — big or small — is treated as a sacred offering. You will receive a tax receipt, and periodic updates on how your contribution is making a difference in the lives of Gau Mata, devotees, and communities.
+                    Every donation - big or small - is treated as a sacred offering. You will receive a tax receipt, and periodic updates on how your contribution is making a difference in the lives of Gau Mata, devotees, and communities.
                   </p>
                 </div>
               </div>
@@ -287,10 +321,10 @@ const Donate = () => {
           <HandHeart className="mx-auto mb-4 text-primary" size={36} />
           <h2 className="mb-3 font-heading text-2xl font-bold text-foreground md:text-3xl">Every Rupee Counts</h2>
           <p className="mx-auto mb-6 max-w-lg font-body text-sm leading-relaxed text-muted-foreground">
-            Whether it is ₹101 or ₹1,00,000 — your seva reaches directly to those who need it. Join our family of 10,000+ donors and sevaks making a real difference every single day.
+            Whether it is ₹101 or ₹1,00,000 - your seva reaches directly to those who need it. Join our family of 10,000+ donors and sevaks making a real difference every single day.
           </p>
           <p className="font-body text-xs italic text-primary">
-            "दानेन तुल्यं न हि लोक कल्पनम्" — There is no greater act in this world than the act of giving.
+            "दानेन तुल्यं न हि लोक कल्पनम्" - There is no greater act in this world than the act of giving.
           </p>
         </div>
       </section>
