@@ -16,7 +16,6 @@ import WhoWeAre from "./pages/WhoWeAre";
 import OurMissionVision from "./pages/OurMissionVision";
 import JagannathLegacy from "./pages/JagannathLegacy";
 import OurFounder from "./pages/OurFounder";
-import OurFounder from "./pages/OurFounder";
 
 const queryClient = new QueryClient();
 
