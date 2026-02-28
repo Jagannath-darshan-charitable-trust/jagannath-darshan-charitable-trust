@@ -1,4 +1,4 @@
-import { ArrowRight, Landmark, MapPin, Hammer, Users, Heart, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import mandirImage from "@/assets/Mandir6.webp";
 import galleryMandir7 from "@/assets/Mandir7.webp";
@@ -7,6 +7,7 @@ import galleryMandir9 from "@/assets/Mandir9.webp";
 import galleryMandir10 from "@/assets/Mandir10.webp";
 import galleryMandir1 from "@/assets/Mandir1.webp";
 import galleryMandir4 from "@/assets/Mandir4.webp";
+
 // Gallery images for construction updates
 const galleryImages = [
   { src: galleryMandir7, alt: "Temple Construction", caption: "Construction in Progress" },
@@ -16,6 +17,7 @@ const galleryImages = [
   { src: galleryMandir1, alt: "Temple Foundation", caption: "Temple Foundation" },
   { src: galleryMandir4, alt: "Temple Foundation", caption: "Temple Renovation" },
 ];
+
 const MandirNirman = () => {
   return (
     <div>
@@ -49,12 +51,10 @@ const MandirNirman = () => {
                 Our vision is to build <strong className="text-foreground">108 temples</strong> in the coming years. Currently, construction is underway at 15 locations, thanks to the generous support of devotees like you.
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 rounded-lg bg-accent/10 px-4 py-2 text-accent-foreground">
-                  <Landmark size={20} className="text-accent" />
+                <div className="rounded-lg bg-accent/10 px-4 py-2 text-accent-foreground">
                   <span className="font-heading font-semibold">Divine Architecture</span>
                 </div>
-                <div className="flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-2 text-primary">
-                  <Users size={20} />
+                <div className="rounded-lg bg-primary/10 px-4 py-2 text-primary">
                   <span className="font-heading font-semibold">Community Center</span>
                 </div>
               </div>
@@ -62,6 +62,7 @@ const MandirNirman = () => {
           </div>
         </div>
       </section>
+
       {/* Current Projects */}
       <section className="section-padding bg-muted/50">
         <div className="container-trust">
@@ -72,10 +73,7 @@ const MandirNirman = () => {
            
            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
              {["Delhi", "Mumbai", "Bengaluru", "Kolkata", "Hyderabad", "Chennai", "Ahmedabad", "Varanasi"].map((city) => (
-                <div key={city} className="flex items-center gap-3 rounded-lg border border-border bg-card p-4 transition hover:shadow-md">
-                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                      <MapPin size={20} />
-                   </div>
+                <div key={city} className="rounded-lg border border-border bg-card p-4 text-center transition hover:shadow-md">
                    <span className="font-heading font-medium text-foreground">{city}</span>
                 </div>
              ))}
@@ -88,7 +86,6 @@ const MandirNirman = () => {
         <div className="container-trust">
           <h2 className="mb-8 text-center font-heading text-2xl font-bold text-foreground md:text-3xl">Construction Updates</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-             {/* Using a placeholder repetition for gallery effect */}
             {galleryImages.map((img, i) => (
               <div key={i} className="group relative overflow-hidden rounded-xl shadow-md">
                 <img src={img.src} alt={img.alt} className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" />

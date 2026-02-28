@@ -45,7 +45,7 @@ const VolunteerSection = () => (
             </p>
             <div className="mb-7 flex flex-wrap gap-3">
               <span className="flex items-center gap-1.5 rounded-full bg-muted px-4 py-1.5 font-body text-xs font-medium text-muted-foreground">
-                <Heart size={12} className="text-primary" /> Gosala Volunteers
+                <Heart size={12} className="text-primary" /> Jagannath Gosala Volunteers
               </span>
               <span className="flex items-center gap-1.5 rounded-full bg-muted px-4 py-1.5 font-body text-xs font-medium text-muted-foreground">
                 <MapPin size={12} className="text-primary" /> Available Pan-India

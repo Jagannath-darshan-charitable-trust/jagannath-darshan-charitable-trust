@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Utensils, Landmark, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
+import { Heart, Landmark, Utensils, ArrowRight } from "lucide-react";
 import gosalaImage from "@/assets/Gosala5.webp";
 import annabhandarImage from "@/assets/Annabhandar3.webp";
 import mandirImage from "@/assets/Mandir6.webp";
@@ -22,37 +22,35 @@ const OurSeva = () => {
       <section className="border-b border-border bg-card py-4">
         <div className="container-trust flex flex-wrap items-center justify-center gap-4 px-4">
           {[
-            { label: "Gosala", icon: Heart, href: "#gosala" },
-            { label: "Annabhandar", icon: Utensils, href: "#annabhandar" },
-            { label: "Jagannath Mandir Nirman", icon: Landmark, href: "#mandir" },
+            { label: "Jagannath Gosala", href: "#gosala" },
+            { label: "Jagannath Annabhandar", href: "#annabhandar" },
+            { label: "Jagannath Mandir Nirman", href: "#mandir" },
           ].map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="flex items-center gap-2 rounded-full border border-border px-5 py-2 font-body text-sm font-medium text-foreground transition-all hover:border-primary hover:bg-primary/5 hover:text-primary"
+              className="rounded-full border border-border px-5 py-2 font-body text-sm font-medium text-foreground transition-all hover:border-primary hover:bg-primary/5 hover:text-primary"
             >
-              <item.icon size={16} />
               {item.label}
             </a>
           ))}
         </div>
       </section>
 
-      {/* Gosala Section */}
+      {/* Jagannath Gosala Section */}
       <section id="gosala" className="section-padding scroll-mt-20">
         <div className="container-trust">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="overflow-hidden rounded-xl shadow-lg">
-              <img src={gosalaImage} alt="Gosala - Cow Protection" className="h-96 w-full object-cover" loading="lazy" />
+              <img src={gosalaImage} alt="Jagannath Gosala - Cow Protection" className="h-96 w-full object-cover" loading="lazy" />
             </div>
             <div>
-              <div className="mb-3 flex items-center gap-2">
-                <Heart className="text-primary" size={24} />
-                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Gosala</h2>
+              <div className="mb-3">
+                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Gosala</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Cow Protection & Care</p>
               <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
-                Our Gosala provides shelter, nutritious food, medical care, and a loving environment
+                Our Jagannath Gosala provides shelter, nutritious food, medical care, and a loving environment
                 for abandoned, injured, and aging cows. Every life is sacred, and protecting Gau Mata
                 is our dharmic duty. Currently caring for <strong className="text-foreground">1,200+ cows</strong> across multiple centers.
               </p>
@@ -64,8 +62,8 @@ const OurSeva = () => {
                   "Medical Care & Veterinary Support",
                   "Regular Photo & Video Updates",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 font-body text-sm text-foreground">
-                    <CheckCircle2 size={16} className="shrink-0 text-impact" /> {item}
+                  <li key={item} className="font-body text-sm text-foreground">
+                    • {item}
                   </li>
                 ))}
               </ul>
@@ -80,14 +78,13 @@ const OurSeva = () => {
         </div>
       </section>
 
-      {/* Annabhandar Section */}
+      {/* Jagannath Annabhandar Section */}
       <section id="annabhandar" className="section-padding scroll-mt-20 bg-muted/50">
         <div className="container-trust">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="order-2 md:order-1">
-              <div className="mb-3 flex items-center gap-2">
-                <Utensils className="text-primary" size={24} />
-                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Annabhandar</h2>
+              <div className="mb-3">
+                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Annabhandar</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Mahaprasad Distribution</p>
               <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
@@ -116,8 +113,8 @@ const OurSeva = () => {
                   "Festival Special Bhandara",
                   "Corporate Sponsorship Options",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 font-body text-sm text-foreground">
-                    <CheckCircle2 size={16} className="shrink-0 text-impact" /> {item}
+                  <li key={item} className="font-body text-sm text-foreground">
+                    • {item}
                   </li>
                 ))}
               </ul>
@@ -129,7 +126,7 @@ const OurSeva = () => {
               </Link>
             </div>
             <div className="order-1 overflow-hidden rounded-xl shadow-lg md:order-2">
-              <img src={annabhandarImage} alt="Annabhandar - Food Distribution" className="h-96 w-full object-cover" loading="lazy" />
+              <img src={annabhandarImage} alt="Jagannath Annabhandar - Food Distribution" className="h-96 w-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>
@@ -143,8 +140,7 @@ const OurSeva = () => {
               <img src={mandirImage} alt="Jagannath Mandir Nirman" className="h-96 w-full object-cover" loading="lazy" />
             </div>
             <div>
-              <div className="mb-3 flex items-center gap-2">
-                <Landmark className="text-primary" size={24} />
+              <div className="mb-3">
                 <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Mandir Nirman</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Jagannath Temple Construction</p>
@@ -158,9 +154,9 @@ const OurSeva = () => {
               <div className="mb-6">
                 <p className="mb-3 font-body text-sm font-semibold text-foreground">Proposed Temple Locations:</p>
                 <div className="flex flex-wrap gap-2">
-                  {["Delhi", "Mumbai", "Bengaluru", "Kolkata", "Hyderabad", "Chennai", "Ahmedabad", "Varanasi"].map((city) => (
-                    <span key={city} className="flex items-center gap-1 rounded-full bg-muted px-3 py-1 font-body text-xs text-muted-foreground">
-                      <MapPin size={12} className="text-primary" /> {city}
+                   {["Delhi", "Mumbai", "Bengaluru", "Kolkata", "Hyderabad", "Chennai", "Ahmedabad", "Varanasi"].map((city) => (
+                    <span key={city} className="rounded-full bg-muted px-3 py-1 font-body text-xs text-muted-foreground">
+                      {city}
                     </span>
                   ))}
                 </div>
@@ -174,8 +170,8 @@ const OurSeva = () => {
                   "Naming Recognition for Major Donors",
                   "Monthly Progress Reports with Photos",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 font-body text-sm text-foreground">
-                    <CheckCircle2 size={16} className="shrink-0 text-impact" /> {item}
+                  <li key={item} className="font-body text-sm text-foreground">
+                    • {item}
                   </li>
                 ))}
               </ul>

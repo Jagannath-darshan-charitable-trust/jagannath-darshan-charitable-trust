@@ -12,8 +12,8 @@ const faqs = [
     a: "Yes! All donations to Jagannath Darshan Charitable Trust are eligible for tax exemption under Section 80G of the Income Tax Act. You will receive an 80G receipt via email after your donation.",
   },
   {
-    q: "How can I adopt a cow at the Gosala?",
-    a: "You can adopt a cow by visiting our Donate page and selecting 'Gosala - Cow Protection'. We offer monthly adoption plans starting at ₹1,500/month. You'll receive regular updates and photos of your adopted cow.",
+    q: "How can I adopt a cow at the Jagannath Gosala?",
+    a: "You can adopt a cow by visiting our Donate page and selecting 'Jagannath Gosala - Cow Protection'. We offer monthly adoption plans starting at ₹1,500/month. You'll receive regular updates and photos of your adopted cow.",
   },
   {
     q: "Where are the temples being constructed?",

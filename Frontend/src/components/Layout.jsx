@@ -1,20 +1,30 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Heart, Utensils, Landmark, ArrowRight } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowRight, Eye, Star, ShieldCheck, BookOpen } from "lucide-react";
 import Footer from "./Footer";
 
 const navItems = [
   { label: "Home", path: "/" },
   {
+    label: "About Us",
+    path: "/about/jagannath-legacy",
+    hideIcon: true,
+    children: [
+      { label: "Lord Jagannath's Legacy", path: "/about/jagannath-legacy" },
+      { label: "Our Founder", path: "/about/our-founder" },
+      { label: "Who We Are", path: "/about/who-we-are" },
+      { label: "Our Mission & Vision", path: "/about/mission-vision" },
+    ],
+  },
+  {
     label: "Our Seva",
     path: "/our-seva",
     children: [
-      { label: "Gosala", subtitle: "Cow Protection & Care", path: "/our-seva/gosala", icon: Heart },
-      { label: "Annabhandar", subtitle: "Mahaprasad Distribution", path: "/our-seva/annabhandar", icon: Utensils },
-      { label: "Mandir Nirman", subtitle: "Temple Construction", path: "/our-seva/mandir-nirman", icon: Landmark },
+      { label: "Jagannath Gosala", subtitle: "Cow Protection & Care", path: "/our-seva/gosala" },
+      { label: "Jagannath Annabhandar", subtitle: "Mahaprasad Distribution", path: "/our-seva/annabhandar" },
+      { label: "Jagannath Mandir Nirman", subtitle: "Temple Construction", path: "/our-seva/mandir-nirman" },
     ],
   },
-  { label: "About Trust", path: "/about" },
   { label: "Donate", path: "/donate" },
   { label: "Contact", path: "/contact" },
 ];
@@ -81,10 +91,12 @@ const Layout = ({ children }) => {
                       }`}
                     >
                       {item.label}
-                      <ChevronDown
-                        size={14}
-                        className="transition-transform duration-200 group-hover:rotate-180"
-                      />
+                      {!item.hideIcon && (
+                        <ChevronDown
+                          size={14}
+                          className="transition-transform duration-200 group-hover:rotate-180"
+                        />
+                      )}
                     </Link>
 
                     {/* Dropdown panel */}
@@ -92,28 +104,29 @@ const Layout = ({ children }) => {
                       <div className="dropdown-inner">
                         {item.children.map((child) => (
                           <Link
-                            key={child.path}
+                            key={child.path + child.label}
                             to={child.path}
                             className="dropdown-item"
                           >
-                            <span className="dropdown-item-icon">
-                              <child.icon size={16} />
-                            </span>
                             <div>
                               <span className="block text-sm font-semibold">{child.label}</span>
-                              <span className="block text-xs text-muted-foreground">{child.subtitle}</span>
+                              {child.subtitle && (
+                                <span className="block text-xs text-muted-foreground">{child.subtitle}</span>
+                              )}
                             </div>
                           </Link>
                         ))}
-                        <div className="mt-1 border-t border-border pt-1">
-                          <Link
-                            to={item.path}
-                            className="dropdown-item text-primary"
-                          >
-                            <ArrowRight size={14} />
-                            <span className="text-sm font-semibold">View All Sevas</span>
-                          </Link>
-                        </div>
+                        {!item.hideIcon && (
+                          <div className="mt-1 border-t border-border pt-1">
+                            <Link
+                              to={item.path}
+                              className="dropdown-item text-primary"
+                            >
+                              <ArrowRight size={14} />
+                              <span className="text-sm font-semibold">View All Sevas</span>
+                            </Link>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </>
@@ -189,21 +202,22 @@ const Layout = ({ children }) => {
                               onClick={() => setMobileOpen(false)}
                               className="flex items-center gap-3 rounded-lg px-3 py-2.5 font-body text-sm text-foreground/70 transition-colors hover:bg-muted hover:text-primary"
                             >
-                              <child.icon size={14} className="text-primary" />
                               <div>
                                 <span className="block font-medium">{child.label}</span>
                                 <span className="block text-xs text-muted-foreground">{child.subtitle}</span>
                               </div>
                             </Link>
                           ))}
-                          <Link
-                            to={item.path}
-                            onClick={() => setMobileOpen(false)}
-                            className="flex items-center gap-2 rounded-lg px-3 py-2 font-body text-sm font-medium text-primary transition-colors hover:bg-primary/10"
-                          >
-                            <ArrowRight size={14} />
-                            View All Sevas
-                          </Link>
+                          {!item.hideIcon && (
+                            <Link
+                              to={item.path}
+                              onClick={() => setMobileOpen(false)}
+                              className="flex items-center gap-2 rounded-lg px-3 py-2 font-body text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+                            >
+                              <ArrowRight size={14} />
+                              View All Sevas
+                            </Link>
+                          )}
                         </div>
                       )}
                     </div>

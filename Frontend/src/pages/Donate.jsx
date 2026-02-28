@@ -3,9 +3,9 @@ import { Heart, Utensils, Landmark, ShieldCheck, CreditCard, HandHeart, Users, C
 import DonateUs from "@/assets/DonateUs.webp";
 
 const purposes = [
-  { value: "gosala", label: "Gosala - Cow Protection", icon: Heart },
-  { value: "annabhandar", label: "Annabhandar - Food Distribution", icon: Utensils },
-  { value: "mandir", label: "Mandir Nirman - Temple Construction", icon: Landmark },
+  { value: "gosala", label: "Jagannath Gosala - Cow Protection", icon: Heart },
+  { value: "annabhandar", label: "Jagannath Annabhandar - Food Distribution", icon: Utensils },
+  { value: "mandir", label: "Jagannath Mandir Nirman - Temple Construction", icon: Landmark },
   { value: "general", label: "General Trust Fund", icon: ShieldCheck },
 ];
 
@@ -15,12 +15,12 @@ const whyDonateReasons = [
   {
     icon: Heart,
     title: "Serve Gau Mata",
-    desc: "Your donation directly feeds, shelters, and provides medical care to 1,200+ abandoned and aging cows at our Gosala.",
+    desc: "Your donation directly feeds, shelters, and provides medical care to 1,200+ abandoned and aging cows at our Jagannath Gosala.",
   },
   {
     icon: Utensils,
     title: "Feed the Hungry",
-    desc: "Through Annabhandar, we serve free Mahaprasad daily to thousands of devotees, pilgrims, and underprivileged families.",
+    desc: "Through Jagannath Annabhandar, we serve free Mahaprasad daily to thousands of devotees, pilgrims, and underprivileged families.",
   },
   {
     icon: Landmark,
@@ -30,9 +30,9 @@ const whyDonateReasons = [
 ];
 
 const donationUsage = [
-  { label: "Gosala - Cow Feed & Medical Care", percent: 35, color: "bg-primary" },
-  { label: "Annabhandar - Food & Kitchen Supplies", percent: 30, color: "bg-accent" },
-  { label: "Mandir Nirman - Construction & Materials", percent: 25, color: "bg-cta" },
+  { label: "Jagannath Gosala - Cow Feed & Medical Care", percent: 35, color: "bg-primary" },
+  { label: "Jagannath Annabhandar - Food & Kitchen Supplies", percent: 30, color: "bg-accent" },
+  { label: "Jagannath Mandir Nirman - Construction & Materials", percent: 25, color: "bg-cta" },
   { label: "Administration & Operations", percent: 10, color: "bg-muted-foreground" },
 ];
 

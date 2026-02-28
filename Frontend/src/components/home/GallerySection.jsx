@@ -6,10 +6,10 @@ import annabhandarImage from "@/assets/Annabhandar6.webp";
 import mandirImage from "@/assets/Mandir5.webp";
 
 const photos = [
-  { src: galleryGosala, alt: "Seva at Gosala - Caring for Gau Mata", label: "Gosala Seva", span: true },
-  { src: galleryAnnabhandar, alt: "Mahaprasad distribution to devotees", label: "Annabhandar Seva" },
+  { src: galleryGosala, alt: "Seva at Jagannath Gosala - Caring for Gau Mata", label: "Jagannath Gosala Seva", span: true },
+  { src: galleryAnnabhandar, alt: "Mahaprasad distribution to devotees", label: "Jagannath Annabhandar Seva" },
   { src: galleryMandir, alt: "Jagannath Temple construction in progress", label: "Jagannath Mandir Nirman" },
-  { src: gosalaImage, alt: "Cows at our Gosala", label: "Gau Mata" },
+  { src: gosalaImage, alt: "Cows at our Jagannath Gosala", label: "Gau Mata" },
   { src: annabhandarImage, alt: "Community meals", label: "Bhandara", span: true },
   { src: mandirImage, alt: "Jagannath Mandir", label: "Jagannath Mandir" },
 ];
@@ -24,7 +24,7 @@ const GallerySection = () => (
         <span className="divider-icon">✦</span>
       </div>
       <p className="mx-auto mb-12 max-w-2xl text-center font-body text-sm text-muted-foreground md:text-base">
-        A glimpse into our daily seva activities across Gosala, Annabhandar, and Jagannath Mandir Nirman projects.
+        A glimpse into our daily seva activities across Jagannath Gosala, Jagannath Annabhandar, and Jagannath Mandir Nirman projects.
       </p>
 
       {/* Masonry-style grid */}

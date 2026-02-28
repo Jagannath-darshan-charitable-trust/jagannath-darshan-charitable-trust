@@ -1,4 +1,4 @@
-import { ArrowRight, Utensils, MapPin, Clock, Calendar, Heart, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import annabhandarImage from "@/assets/Annabhandar3.webp";
 import annabhandar1 from "@/assets/Annabhandar1.webp";
@@ -24,7 +24,7 @@ const Annabhandar = () => {
       {/* Header */}
       <section className="bg-primary py-16 text-center">
         <h1 className="font-heading text-3xl font-bold text-primary-foreground md:text-4xl">
-          Annabhandar - Mahaprasad Seva
+          Jagannath Annabhandar - Mahaprasad Seva
         </h1>
         <p className="mt-2 font-body text-primary-foreground/80">
           Feeding the Hungry with Love and Devotion
@@ -40,25 +40,23 @@ const Annabhandar = () => {
                 No One Should Go Hungry
               </h2>
               <p className="mb-4 font-body text-base leading-relaxed text-muted-foreground text-justify">
-                In our culture, donating food (Anna Daan) is considered the highest form of charity. Our Annabhandar initiative ensures that thousands of devotees, sadhus, and underprivileged families receive fresh, nutritious, and satvik Mahaprasad every day.
+                In our culture, donating food (Anna Daan) is considered the highest form of charity. Our Jagannath Annabhandar initiative ensures that thousands of devotees, sadhus, and underprivileged families receive fresh, nutritious, and satvik Mahaprasad every day.
               </p>
               <p className="mb-6 font-body text-base leading-relaxed text-muted-foreground text-justify">
                 We believe that food is not just nourishment for the body but also for the soul. That is why every meal is prepared with purity and offered to the Lord before distribution. Currently, we serve over <strong className="text-foreground">2,000+ meals daily</strong>.
               </p>
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 rounded-lg bg-accent/10 px-4 py-2 text-accent-foreground">
-                  <Utensils size={20} className="text-accent" />
+                <div className="rounded-lg bg-accent/10 px-4 py-2 text-accent-foreground">
                   <span className="font-heading font-semibold">Satvik Bhojan</span>
                 </div>
-                <div className="flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-2 text-primary">
-                  <Heart size={20} />
+                <div className="rounded-lg bg-primary/10 px-4 py-2 text-primary">
                   <span className="font-heading font-semibold">Served with Love</span>
                 </div>
               </div>
             </div>
             <div className="order-1 space-y-4 md:order-2">
               <div className="overflow-hidden rounded-xl shadow-lg">
-                <img src={annabhandarImage} alt="Annabhandar" className="h-96 w-full object-cover" />
+                <img src={annabhandarImage} alt="Jagannath Annabhandar" className="h-96 w-full object-cover" />
               </div>
             </div>
           </div>
@@ -71,14 +69,11 @@ const Annabhandar = () => {
            <h2 className="mb-8 font-heading text-2xl font-bold text-foreground md:text-3xl">Our Daily Impact</h2>
            <div className="grid gap-6 md:grid-cols-3">
             {[
-              { icon: Utensils, title: "Meals Served", value: "2,000+", desc: "Fresh meals served daily to devotees and the needy." },
-              { icon: Calendar, title: "Days Active", value: "365", desc: "Our kitchen runs every single day of the year." },
-              { icon: MapPin, title: "Distribution Spots", value: "5+", desc: "Serving at key locations near temples and shelters." },
+              { title: "Meals Served", value: "2,000+", desc: "Fresh meals served daily to devotees and the needy." },
+              { title: "Days Active", value: "365", desc: "Our kitchen runs every single day of the year." },
+              { title: "Distribution Spots", value: "5+", desc: "Serving at key locations near temples and shelters." },
             ].map((item, index) => (
                <div key={index} className="rounded-xl bg-card p-6 shadow-sm border border-border">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <item.icon size={24} />
-                </div>
                 <h3 className="mb-1 font-heading text-2xl font-bold text-foreground">{item.value}</h3>
                 <p className="mb-2 font-heading text-sm font-medium text-cta">{item.title}</p>
                 <p className="font-body text-sm text-muted-foreground">{item.desc}</p>
@@ -125,7 +120,7 @@ const Annabhandar = () => {
              </div>
              <div className="rounded-xl bg-primary-foreground/10 p-6 backdrop-blur-sm">
                 <h3 className="mb-2 font-heading text-xl font-bold">Monthly Seva</h3>
-                <p className="mb-4 text-sm opacity-90">Become a monthly donor for Annabhandar.</p>
+                <p className="mb-4 text-sm opacity-90">Become a monthly donor for Jagannath Annabhandar.</p>
                 <p className="mb-6 text-2xl font-bold">Any Amount</p>
                 <Link to="/donate" className="inline-block w-full rounded-lg bg-cta px-4 py-2 font-body text-sm font-bold text-cta-foreground hover:bg-cta/90">Donate Monthly</Link>
              </div>
@@ -144,19 +139,13 @@ const Annabhandar = () => {
                   Experience the joy of serving food with your own hands. We welcome volunteers to join us in cooking and distributing Mahaprasad.
                 </p>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="mt-1 shrink-0 text-primary" size={20} />
-                    <div>
-                      <h4 className="font-heading text-sm font-semibold text-foreground">Kitchen Location</h4>
-                      <p className="text-sm text-muted-foreground">Jagannath Darshan Annabhandar, Near Gundicha Temple, Puri</p>
-                    </div>
+                  <div>
+                    <h4 className="font-heading text-sm font-semibold text-foreground">Kitchen Location</h4>
+                    <p className="text-sm text-muted-foreground">Jagannath Annabhandar, Near Gundicha Temple, Puri</p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Clock className="mt-1 shrink-0 text-primary" size={20} />
-                    <div>
-                      <h4 className="font-heading text-sm font-semibold text-foreground">Serving Times</h4>
-                      <p className="text-sm text-muted-foreground">Lunch: 12:00 PM – 2:00 PM<br/>Dinner: 7:00 PM – 9:00 PM</p>
-                    </div>
+                  <div>
+                    <h4 className="font-heading text-sm font-semibold text-foreground">Serving Times</h4>
+                    <p className="text-sm text-muted-foreground">Lunch: 12:00 PM – 2:00 PM<br/>Dinner: 7:00 PM – 9:00 PM</p>
                   </div>
                 </div>
               </div>

@@ -6,7 +6,7 @@ import mandirImage from "@/assets/Mandir2.webp";
 
 const sevaCards = [
   {
-    title: "Gosala",
+    title: "Jagannath Gosala",
     subtitle: "Cow Protection & Care",
     description: "Provide shelter, food, and medical care to abandoned and injured cows. Adopt a cow or sponsor monthly care.",
     image: gosalaImage,
@@ -15,7 +15,7 @@ const sevaCards = [
     num: "01",
   },
   {
-    title: "Annabhandar",
+    title: "Jagannath Annabhandar",
     subtitle: "Mahaprasad Distribution",
     description: "Feed the hungry with sacred Mahaprasad. Sponsor meals for devotees and the underprivileged every day.",
     image: annabhandarImage,

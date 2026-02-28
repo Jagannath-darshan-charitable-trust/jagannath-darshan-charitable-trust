@@ -40,7 +40,7 @@ const Footer = () => {
               {[
                 { label: "Home", path: "/" },
                 { label: "Our Seva", path: "/our-seva" },
-                { label: "About Trust", path: "/about" },
+                { label: "About Trust", path: "/about/who-we-are" },
                 { label: "Donate", path: "/donate" },
                 { label: "Contact", path: "/contact" },
               ].map((item) => (
@@ -69,12 +69,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/our-seva/annabhandar" className="inline-flex items-center gap-2 text-secondary-foreground/65 transition-colors hover:text-accent">
-                  <Utensils size={13} className="text-accent/50" /> Annabhandar
+                  <Utensils size={13} className="text-accent/50" /> Jagannath Annabhandar
                 </Link>
               </li>
               <li>
                 <Link to="/our-seva/mandir-nirman" className="inline-flex items-center gap-2 text-secondary-foreground/65 transition-colors hover:text-accent">
-                  <Landmark size={13} className="text-accent/50" /> Mandir Nirman
+                  <Landmark size={13} className="text-accent/50" /> Jagannath Mandir Nirman
                 </Link>
               </li>
             </ul>

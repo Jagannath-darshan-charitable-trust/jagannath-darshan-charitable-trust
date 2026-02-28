@@ -194,6 +194,15 @@
   .btn-glow:hover::after {
     opacity: 1;
   }
+
+  /* ── Vision / Mission decorative pattern overlay ── */
+  .vision-pattern {
+    @apply pointer-events-none absolute inset-0;
+    background-image: radial-gradient(circle at 1.5px 1.5px,
+        hsl(var(--primary-foreground) / 0.06) 1px,
+        transparent 0);
+    background-size: 28px 28px;
+  }
 }
 
 @layer utilities {

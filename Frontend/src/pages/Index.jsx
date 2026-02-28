@@ -18,12 +18,12 @@ const impactStats = [
 
 const testimonials = [
   {
-    quote: "Donating to the Gosala project gave me immense peace. Knowing that Gau Mata is being taken care of fills my heart with joy.",
+    quote: "Donating to the Jagannath Gosala project gave me immense peace. Knowing that Gau Mata is being taken care of fills my heart with joy.",
     name: "Smt. Radha Devi",
     location: "Bhubaneswar, Odisha",
   },
   {
-    quote: "The Annabhandar seva is truly divine. I have seen thousands of people being fed Mahaprasad with such devotion and love.",
+    quote: "The Jagannath Annabhandar seva is truly divine. I have seen thousands of people being fed Mahaprasad with such devotion and love.",
     name: "Sri Mohan Das",
     location: "Puri, Odisha",
   },
