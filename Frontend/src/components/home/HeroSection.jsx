@@ -35,42 +35,14 @@ const HeroSection = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage: `url(${img})`,
-                animation: isActive ? "heroZoom 8s ease-out forwards" : "none",
-                transform: isActive ? undefined : "scale(1)",
+                transform: "scale(1)",
               }}
             />
           </div>
         );
       })}
 
-      {/* Deep overlay gradient */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "linear-gradient(to bottom, rgba(20,35,30,0.55) 0%, rgba(20,35,30,0.35) 40%, rgba(20,35,30,0.70) 100%)",
-          zIndex: 1,
-        }}
-      />
 
-      {/* Decorative floating particles */}
-      <div className="absolute inset-0 overflow-hidden" style={{ zIndex: 2 }}>
-        {/* Floating circles */}
-        <div className="animate-float absolute top-[15%] left-[10%] h-2 w-2 rounded-full bg-accent/20" style={{ animationDelay: "0s" }} />
-        <div className="animate-float absolute top-[25%] right-[15%] h-3 w-3 rounded-full bg-accent/15" style={{ animationDelay: "1s" }} />
-        <div className="animate-float absolute bottom-[30%] left-[20%] h-1.5 w-1.5 rounded-full bg-accent/25" style={{ animationDelay: "2s" }} />
-        <div className="animate-float absolute top-[60%] right-[25%] h-2 w-2 rounded-full bg-primary-foreground/10" style={{ animationDelay: "1.5s" }} />
-        <div className="animate-float absolute bottom-[20%] right-[10%] h-2.5 w-2.5 rounded-full bg-accent/15" style={{ animationDelay: "0.5s" }} />
-
-        {/* Large decorative ring */}
-        <div
-          className="animate-spin-slow absolute -right-32 -top-32 h-64 w-64 rounded-full border border-accent/10 md:h-96 md:w-96"
-          style={{ animationDuration: "40s" }}
-        />
-        <div
-          className="animate-spin-slow absolute -left-20 -bottom-20 h-48 w-48 rounded-full border border-primary-foreground/5 md:h-72 md:w-72"
-          style={{ animationDirection: "reverse", animationDuration: "35s" }}
-        />
-      </div>
 
       {/* Main content */}
       <div className="relative px-4 text-center" style={{ zIndex: 10 }}>
@@ -93,13 +65,14 @@ const HeroSection = () => {
           {" "}for Sanatan Dharma
         </h1>
 
-        <p
-          className="mx-auto mt-6 max-w-2xl animate-fade-in-up font-body text-base leading-relaxed text-primary-foreground/80 md:text-lg"
+        <div
+          className="mx-auto mt-8 flex max-w-2xl justify-center animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Inspired by Sri Bhabani Prasad Das Mohapatra, Chief Daitapati of Jagannath Temple, Puri
-        </p>
-
+          <p className="rounded-full bg-primary/40 inline-block px-8 py-2.5 font-body text-sm font-medium leading-relaxed text-primary-foreground backdrop-blur-md md:text-base border border-primary-foreground/10">
+            Inspired by Sri Bhabani Prasad Das Mohapatra, Chief Daitapati of Jagannath Temple, Puri
+          </p>
+        </div>
         <div
           className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
@@ -112,7 +85,7 @@ const HeroSection = () => {
           </Link>
           <Link
             to="/our-seva"
-            className="rounded-xl border-2 border-primary-foreground/25 px-8 py-4 font-body text-base font-semibold text-primary-foreground transition-all hover:border-accent/50 hover:bg-primary-foreground/10 hover:-translate-y-0.5"
+            className="btn-glow rounded-xl bg-emerald-600 px-8 py-4 font-body text-base font-bold text-white shadow-lg transition-all hover:bg-emerald-700 hover:shadow-2xl hover:-translate-y-0.5"
           >
             Explore Our Seva
           </Link>
@@ -140,14 +113,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-16"
-        style={{
-          background: "linear-gradient(to top, hsl(82, 28%, 92%), transparent)",
-          zIndex: 5,
-        }}
-      />
     </section>
   );
 };

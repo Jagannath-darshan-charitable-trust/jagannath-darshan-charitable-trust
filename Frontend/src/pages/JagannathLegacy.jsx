@@ -1,15 +1,28 @@
 import jagannathImage from "@/assets/Jagannath1.webp";
 import jagannathImage2 from "@/assets/Jagannath2.webp";
 import jagannathImage3 from "@/assets/Jagannath3.webp";
+import jagannathHeaderBg from "@/assets/Jagannath4.webp";
 
 const JagannathLegacy = () => {
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-primary py-14 text-center">
-        <h1 className="font-heading text-3xl font-bold text-primary-foreground md:text-4xl">
-          Lord Jagannath's Legacy
-        </h1>
+      <section className="relative py-48 flex items-center justify-center text-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000 hover:scale-105"
+          style={{ 
+            backgroundImage: `url(${jagannathHeaderBg})`,
+          }}
+        />
+        <div className="absolute inset-0 z-10 bg-black/60" />
+        
+        <div className="relative z-20 container-trust px-4">
+          <h1 className="font-heading text-4xl font-bold text-white md:text-6xl lg:text-7xl animate-fade-in-up">
+            Lord Jagannath's Legacy
+          </h1>
+          <div className="mt-6 mx-auto h-1.5 w-32 bg-accent rounded-full animate-fade-in" style={{ animationDelay: "0.4s" }} />
+        </div>
       </section>
 
       {/* Content */}

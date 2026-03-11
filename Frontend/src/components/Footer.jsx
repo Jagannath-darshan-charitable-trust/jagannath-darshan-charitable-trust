@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Heart, Mail, Phone, MapPin, Instagram, Facebook, Twitter, Utensils, Landmark, ArrowUpRight } from "lucide-react";
+import footerLogo from "@/assets/Logo_2.png";
 
 const Footer = () => {
   return (
@@ -16,10 +17,12 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Trust Info */}
           <div className="lg:col-span-1">
-            <div className="mb-4 flex items-center gap-2">
-              <h3 className="font-heading text-lg font-bold text-accent">
-                Jagannath Darshan Charitable Trust
-              </h3>
+            <div className="mb-4">
+              <img
+                src={footerLogo}
+                alt="Jagannath Darshan Charitable Trust"
+                className="h-14 w-auto"
+              />
             </div>
             <p className="mb-5 font-body text-sm leading-relaxed text-secondary-foreground/75">
               Seva to Gau Mata, Annavandar Seva & All India Jagannath Mandir Nirman for Sanatan Dharma.
@@ -88,15 +91,15 @@ const Footer = () => {
             <ul className="space-y-3 font-body text-sm text-secondary-foreground/65">
               <li className="flex items-start gap-2.5">
                 <MapPin size={15} className="mt-0.5 shrink-0 text-accent/60" />
-                <span>Puri, Odisha, India</span>
+                <span>Office No: 307, 3rd Floor, Esplanade One Mall, Rasulgarh, Bhubaneswar, Odisha 751010</span>
               </li>
-              <li className="flex items-center gap-2.5">
-                <Phone size={15} className="shrink-0 text-accent/60" />
-                <span>+91 XXXXX XXXXX</span>
+              <li className="flex items-start gap-2.5">
+                <Phone size={15} className="mt-0.5 shrink-0 text-accent/60" />
+                <span>+91 79781 75438<br />+91 73809 6631</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={15} className="shrink-0 text-accent/60" />
-                <span>info@jaganathsevatrust.org</span>
+                <span>jagannathdarshantrust.hq@gmail.com</span>
               </li>
             </ul>
 

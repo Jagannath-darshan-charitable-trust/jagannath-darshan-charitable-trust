@@ -29,6 +29,36 @@ const inquiryTypes = [
 
 const Contact = () => {
   const [openFaq, setOpenFaq] = useState(null);
+  const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
+  const [status, setStatus] = useState({ loading: false, success: "", error: "" });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: "", error: "" });
+
+    try {
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setStatus({ loading: false, success: data.message, error: "" });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus({ loading: false, success: "", error: data.message || "Something went wrong." });
+      }
+    } catch (err) {
+      setStatus({ loading: false, success: "", error: "Failed to send message. Please try again." });
+    }
+  };
 
   return (
     <div>
@@ -47,9 +77,9 @@ const Contact = () => {
               <h2 className="mb-6 font-heading text-2xl font-bold text-foreground">Get in Touch</h2>
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, title: "Address", text: "Jagannath Darshan Charitable Trust, Grand Road, Puri, Odisha - 752001, India" },
-                  { icon: Phone, title: "Phone", text: "+91 XXXXX XXXXX" },
-                  { icon: Mail, title: "Email", text: "info@jaganathsevatrust.org" },
+                  { icon: MapPin, title: "Address", text: "Office No: 307, 3rd Floor, Esplanade One Mall, Rasulgarh, Bhubaneswar, Odisha 751010" },
+                  { icon: Phone, title: "Phone", text: "+91 79781 75438, +91 73809 6631" },
+                  { icon: Mail, title: "Email", text: "jagannathdarshantrust.hq@gmail.com" },
                   { icon: Clock, title: "Office Hours", text: "Mon – Sat: 9:00 AM – 6:00 PM" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-3">
@@ -84,12 +114,28 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
               <h3 className="mb-4 font-heading text-lg font-semibold text-foreground">Send us a Message</h3>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+
+              {status.success && (
+                <div className="mb-4 rounded-lg bg-green-50 border border-green-200 p-3 text-sm text-green-700">
+                  ✅ {status.success}
+                </div>
+              )}
+              {status.error && (
+                <div className="mb-4 rounded-lg bg-red-50 border border-red-200 p-3 text-sm text-red-700">
+                  ❌ {status.error}
+                </div>
+              )}
+
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label className="mb-1 block font-body text-xs font-medium text-muted-foreground">Full Name</label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Your name"
+                    required
                     className="w-full rounded-lg border border-border bg-background px-4 py-2.5 font-body text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                   />
                 </div>
@@ -97,7 +143,11 @@ const Contact = () => {
                   <label className="mb-1 block font-body text-xs font-medium text-muted-foreground">Email</label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="you@example.com"
+                    required
                     className="w-full rounded-lg border border-border bg-background px-4 py-2.5 font-body text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                   />
                 </div>
@@ -105,7 +155,11 @@ const Contact = () => {
                   <label className="mb-1 block font-body text-xs font-medium text-muted-foreground">Subject</label>
                   <input
                     type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     placeholder="How can we help?"
+                    required
                     className="w-full rounded-lg border border-border bg-background px-4 py-2.5 font-body text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                   />
                 </div>
@@ -113,15 +167,20 @@ const Contact = () => {
                   <label className="mb-1 block font-body text-xs font-medium text-muted-foreground">Message</label>
                   <textarea
                     rows={4}
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Your message..."
+                    required
                     className="w-full resize-none rounded-lg border border-border bg-background px-4 py-2.5 font-body text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-cta py-3 font-body text-sm font-semibold text-cta-foreground transition hover:bg-cta/90"
+                  disabled={status.loading}
+                  className="w-full rounded-lg bg-cta py-3 font-body text-sm font-semibold text-cta-foreground transition hover:bg-cta/90 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {status.loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>

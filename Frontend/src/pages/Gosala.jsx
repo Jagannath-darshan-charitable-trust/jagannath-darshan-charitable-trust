@@ -10,6 +10,7 @@ import gosala11 from "@/assets/Gosala11.webp";
 import gosala12 from "@/assets/Gosala12.webp";
 import gosala13 from "@/assets/Gosala13.webp";
 import gosala14 from "@/assets/Gosala14.webp";
+import gosala17 from "@/assets/Gosala17.webp";
 
 const galleryImages = [
   { src: gosala6, alt: "Cows grazing in the Jagannath Gosala", caption: "Open Grazing" },
@@ -21,13 +22,14 @@ const galleryImages = [
   { src: gosala12, alt: "Sevaks caring for cows", caption: "Seva in Action" },
   { src: gosala13, alt: "Cows resting peacefully", caption: "Peaceful Rest" },
   { src: gosala14, alt: "Evening Feeding at Jagannath Gosala", caption: "Evening Feeding" },
+  { src: gosala17, alt: "Sacred cow at Jagannath Gosala", caption: "Sacred Gau Mata" },
 ];
 const Gosala = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Header */}
-      <section className="bg-primary py-20 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="bg-primary py-36 text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <img src={gosalaImage} alt="" className="h-full w-full object-cover" />
         </div>
         <div className="container-trust relative z-10">

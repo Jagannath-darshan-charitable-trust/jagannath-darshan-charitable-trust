@@ -2,7 +2,7 @@ import galleryGosala from "@/assets/Gosala4.webp";
 import galleryAnnabhandar from "@/assets/Annabhandar5.webp";
 import galleryMandir from "@/assets/Mandir3.webp";
 import gosalaImage from "@/assets/Gosala3.webp";
-import annabhandarImage from "@/assets/Annabhandar6.webp";
+import annabhandarImage from "@/assets/Annabhandar4.webp";
 import mandirImage from "@/assets/Mandir5.webp";
 
 const photos = [

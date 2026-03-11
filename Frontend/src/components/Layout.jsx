@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, ArrowRight, Eye, Star, ShieldCheck, BookOpen } from "lucide-react";
 import Footer from "./Footer";
+import logoImage from "@/assets/Logo_1.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -64,15 +65,12 @@ const Layout = ({ children }) => {
       >
         <nav className="container-trust flex items-center justify-between px-4 py-3 md:px-8">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col">
-              <span className="font-heading text-base font-bold leading-tight text-primary md:text-lg">
-                Jagannath Darshan
-              </span>
-              <span className="font-body text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                Charitable Trust
-              </span>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img
+              src={logoImage}
+              alt="Jagannath Darshan Charitable Trust"
+              className="h-9 w-auto md:h-11"
+            />
           </Link>
 
           {/* Desktop nav */}

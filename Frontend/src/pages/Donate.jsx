@@ -166,7 +166,14 @@ const Donate = () => {
                 {presetAmounts.map((amt) => (
                   <button
                     key={amt}
-                    onClick={() => { setSelectedAmount(amt); setCustomAmount(""); }}
+                    onClick={() => {
+                      if (selectedAmount === amt) {
+                        setSelectedAmount(null);
+                      } else {
+                        setSelectedAmount(amt);
+                        setCustomAmount("");
+                      }
+                    }}
                     className={`rounded-lg border px-3 py-2.5 font-body text-sm font-medium transition ${
                       selectedAmount === amt
                         ? "border-primary bg-primary/10 text-primary"
@@ -181,7 +188,11 @@ const Donate = () => {
                 type="number"
                 placeholder="Enter custom amount"
                 value={customAmount}
-                onChange={(e) => { setCustomAmount(e.target.value); setSelectedAmount(null); }}
+                onFocus={() => setSelectedAmount(null)}
+                onChange={(e) => {
+                  setCustomAmount(e.target.value);
+                  setSelectedAmount(null);
+                }}
                 className="w-full rounded-lg border border-border bg-background px-4 py-2.5 font-body text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>

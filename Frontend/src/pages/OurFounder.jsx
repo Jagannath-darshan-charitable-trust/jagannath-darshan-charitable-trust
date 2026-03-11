@@ -14,7 +14,7 @@ const OurFounder = () => {
       <section className="section-padding bg-background">
         <div className="container-trust mx-auto max-w-4xl space-y-6 px-4">
           {/* Founder Image */}
-          <div className="mx-auto w-48 h-48 overflow-hidden rounded-full border-4 border-primary/20 shadow-lg md:w-56 md:h-56">
+          <div className="mx-auto w-64 h-64 overflow-hidden rounded-full border-4 border-primary/20 shadow-lg md:w-80 md:h-80">
             <img src={founderImage} alt="Sri Bhabani Prasad Das Mohapatra" className="h-full w-full object-cover" />
           </div>
 

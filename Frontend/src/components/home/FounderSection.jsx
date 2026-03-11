@@ -11,7 +11,7 @@ const FounderSection = () => (
         <span className="divider-icon">✦</span>
       </div>
 
-      <div className="mx-auto mt-10 grid max-w-4xl items-center gap-10 md:grid-cols-[300px_1fr]">
+      <div className="mx-auto mt-10 grid max-w-5xl items-center gap-10 md:grid-cols-[380px_1fr]">
         {/* Image with ornamental ring */}
         <div className="mx-auto">
           <div className="relative">
@@ -19,7 +19,7 @@ const FounderSection = () => (
             <div className="absolute -inset-3 rounded-2xl border-2 border-dashed border-accent/30" />
             {/* Inner glow ring */}
             <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-accent/20 via-transparent to-primary/20" />
-            <div className="relative h-auto w-full max-w-[280px] aspect-square overflow-hidden rounded-2xl border-4 border-accent/40 shadow-xl">
+            <div className="relative h-auto w-full max-w-[360px] aspect-square overflow-hidden rounded-2xl border-4 border-accent/40 shadow-xl">
               <img
                 src={founderImage}
                 alt="Sri Bhabani Prasad Das Mohapatra"

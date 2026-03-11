@@ -3,8 +3,8 @@ import { Heart, Utensils, Landmark, Stethoscope } from "lucide-react";
 const breakdownItems = [
   {
     icon: Heart,
-    title: "₹1,500 / month",
-    description: "Feeds & shelters one cow for a full month including fodder, water, and daily care.",
+    title: "Monthly Goshala Seva",
+    description: "Support the ongoing care, food, and shelter for sacred cows in our Goshala throughout the month.",
     accent: "from-primary/20 to-primary/5",
     borderColor: "hover:border-primary/40",
     iconBg: "bg-primary/10",
@@ -12,8 +12,8 @@ const breakdownItems = [
   },
   {
     icon: Utensils,
-    title: "₹50 per meal",
-    description: "Provides one wholesome Mahaprasad meal to a hungry person - rice, dal, sabzi, and sweets.",
+    title: "Daily Annadanam",
+    description: "Provides wholesome Mahaprasad meals to devotees and those in need, ensuring no one goes hungry.",
     accent: "from-accent/20 to-accent/5",
     borderColor: "hover:border-accent/40",
     iconBg: "bg-accent/10",
@@ -21,8 +21,8 @@ const breakdownItems = [
   },
   {
     icon: Landmark,
-    title: "₹501 per brick",
-    description: "Contributes one brick to the construction of a new Jagannath temple in your name.",
+    title: "Seva through Construction",
+    description: "Contribute to the foundation and structural development of new Jagannath temples across the nation.",
     accent: "from-secondary/20 to-secondary/5",
     borderColor: "hover:border-secondary/40",
     iconBg: "bg-secondary/10",
@@ -30,8 +30,8 @@ const breakdownItems = [
   },
   {
     icon: Stethoscope,
-    title: "₹2,000 / treatment",
-    description: "Covers veterinary care and medicine for one sick or injured cow at our Gosala.",
+    title: "Medical Care for Cows",
+    description: "Covers essential veterinary treatments, medicines, and specialized health care for the cows in our Goshala.",
     accent: "from-impact/20 to-impact/5",
     borderColor: "hover:border-impact/40",
     iconBg: "bg-impact/10",

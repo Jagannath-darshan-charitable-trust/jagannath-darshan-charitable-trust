@@ -1,0 +1,117 @@
+Backend integration plan for Jagannath Darshan Charitable Trust
+==============================================================
+
+1. Current state (no real backend usage yet)
+-------------------------------------------
+- The project currently contains only a React/Vite frontend under `Frontend/`.
+- There is **no Node/Express server or MongoDB database** present in the codebase.
+- Frontend pages use only local React state; there are **no `fetch`, axios, or API calls** anywhere in `src/`.
+- This confirms your understanding: there are **very few areas that truly need backend work**.
+
+2. Places where backend is realistically needed
+----------------------------------------------
+Based on the current UI and text, these are the only logical backend integration points:
+
+2.1. Contact page (`Frontend/src/pages/Contact.jsx`)
+- The "Send us a Message" form currently:
+  - Renders input fields (name, email, subject, message).
+  - Uses `onSubmit={(e) => e.preventDefault()}` so **nothing is actually sent anywhere**.
+- Recommended backend responsibilities:
+  - **POST `/api/contact`** endpoint in Express to:
+    - Validate input (name, email, subject, message).
+    - Option A: Store enquiries in MongoDB (e.g. `contact_messages` collection) for later follow-up.
+    - Option B: Send an email notification to trust admins (can be added later).
+  - Optionally return a success/failure status so the frontend can show a toast using the existing toast system.
+- This is one of the **main real backend needs** in the current app.
+
+2.2. Donate page (`Frontend/src/pages/Donate.jsx`)
+- The "Contribute Now" section:
+  - Lets user choose donation type (one-time / monthly), purpose, amount, and basic donor info.
+  - The **Pay/Donate button currently does not call any API or payment gateway**.
+  - The UI explicitly says: "Powered by Razorpay (Integration Coming Soon)".
+- Recommended backend responsibilities:
+  - **POST `/api/donations/create-order`** (or similar) in Express to:
+    - Validate donation details (amount, donor info, purpose, type).
+    - Create a Razorpay order using Razorpay Node SDK.
+    - Return the `order_id` and required metadata to the frontend.
+  - **POST `/api/donations/verify`** to:
+    - Receive Razorpay payment response/signature from the frontend.
+    - Verify payment signature on the server (security critical).
+    - On success, write a donation record into MongoDB (e.g. `donations` collection) including:
+      - donor name & contact
+      - amount, purpose, donation type
+      - Razorpay order/payment IDs and status
+      - timestamp
+    - Optionally trigger email/WhatsApp receipt later.
+- This is the **most important backend integration area** in the project.
+
+3. Where MongoDB would be useful (optional but recommended)
+----------------------------------------------------------
+MongoDB is not strictly required just to call Razorpay, but is valuable for:
+- **Persisting donation records** for:
+  - Admin dashboards and reports later.
+  - Regenerating 80G/12A donation receipts.
+  - Auditing and compliance.
+- **Storing contact enquiries** so your team can track follow-ups.
+
+Suggested collections:
+- `donations`
+  - Fields: amount, currency, purpose, type (one-time/monthly), donorName, donorContact, orderId, paymentId, status, createdAt, updatedAt.
+- `contact_messages`
+  - Fields: name, email, subject, message, status (new/in-progress/resolved), createdAt.
+
+4. Minimal backend architecture to add
+--------------------------------------
+If you approve, the minimal backend skeleton I would add is:
+- Root-level `backend/` folder with:
+  - `server.js` (Express app entry).
+  - `routes/contact.js` for `/api/contact`.
+  - `routes/donations.js` for `/api/donations/...`.
+  - `models/Donation.js`, `models/ContactMessage.js` (Mongoose schemas, only if MongoDB is enabled).
+  - `config/db.js` (MongoDB connection helper).
+  - `.env.example` documenting required environment variables:
+    - `PORT`, `MONGODB_URI`, `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`, etc.
+  - `package.json` (backend-specific) with dependencies:
+    - `express`, `cors`, `dotenv`, `mongoose`, `razorpay`, plus `nodemon` for dev.
+- Dev workflow:
+  - Run frontend (Vite) on e.g. port 5173.
+  - Run backend (Express) on e.g. port 5000.
+  - Configure Vite dev proxy for `/api/*` → `http://localhost:5000`.
+
+5. Changes required in frontend to use the backend
+--------------------------------------------------
+Once backend exists, only small, focused changes are needed in the frontend:
+
+5.1. Contact form submit
+- In `Contact.jsx`:
+  - Replace `onSubmit={(e) => e.preventDefault()}` with an async handler that:
+    - Calls `fetch("/api/contact", { method: "POST", body: JSON.stringify({...}) })`.
+    - Shows success/error toast using existing toast utilities.
+    - Clears the form on success.
+
+5.2. Donate flow
+- In `Donate.jsx`:
+  - On clicking the Donate button (and when `finalAmount > 0`), call backend:
+    - `POST /api/donations/create-order` with amount, purpose, type, donor info.
+    - Receive order details and then initialize Razorpay Checkout on the frontend.
+  - After payment completes, call:
+    - `POST /api/donations/verify` with payment info.
+    - Show success/failure toast and optionally navigate to a "Thank you" page.
+
+6. Summary: Where backend is actually needed
+--------------------------------------------
+- **Definitely needed:**
+  - Contact form handling: `/api/contact`.
+  - Donation and payment handling with Razorpay: `/api/donations/*`.
+- **Optional but recommended with MongoDB:**
+  - Persisting donations (`donations` collection).
+  - Persisting contact messages (`contact_messages` collection).
+- **Not needed anywhere else right now:**
+  - All other pages (seva descriptions, about pages, legacy, etc.) are static and do not require backend logic unless you later want a CMS or admin panel.
+
+After you review this plan and give explicit permission, I will:
+1) Create the `backend/` Node + Express structure.
+2) Wire up MongoDB models (if you want DB integration now).
+3) Expose the `/api/contact` and `/api/donations` endpoints.
+4) Modify `Contact.jsx` and `Donate.jsx` to call these APIs from the frontend.
+

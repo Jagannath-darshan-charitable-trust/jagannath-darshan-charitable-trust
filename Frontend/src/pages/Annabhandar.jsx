@@ -22,13 +22,18 @@ const Annabhandar = () => {
   return (
     <div>
       {/* Header */}
-      <section className="bg-primary py-16 text-center">
-        <h1 className="font-heading text-3xl font-bold text-primary-foreground md:text-4xl">
-          Jagannath Annabhandar - Mahaprasad Seva
-        </h1>
-        <p className="mt-2 font-body text-primary-foreground/80">
-          Feeding the Hungry with Love and Devotion
-        </p>
+      <section className="bg-primary py-36 text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img src={annabhandarImage} alt="" className="h-full w-full object-cover" />
+        </div>
+        <div className="container-trust relative z-10">
+          <h1 className="font-heading text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
+            Jagannath Annabhandar
+          </h1>
+          <p className="mt-4 font-body text-xl text-primary-foreground/90 max-w-2xl mx-auto">
+            Feeding the Hungry with Love and Devotion through Mahaprasad Seva.
+          </p>
+        </div>
       </section>
 
       {/* About Section */}
@@ -58,6 +63,28 @@ const Annabhandar = () => {
               <div className="overflow-hidden rounded-xl shadow-lg">
                 <img src={annabhandarImage} alt="Jagannath Annabhandar" className="h-96 w-full object-cover" />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Spiritual Essence Section */}
+      <section className="section-padding bg-background">
+        <div className="container-trust">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="mb-6 font-heading text-2xl font-bold text-foreground md:text-3xl">
+              The Spiritual Essence of Anna Seva
+            </h2>
+            <div className="space-y-6 font-body text-base leading-relaxed text-muted-foreground text-justify">
+              <p>
+                In the sacred traditions of Jagannath Puri, food is not merely sustenance but a manifestation of "Anna Brahma"-the Divine in the form of grain. The tradition of Jagannath Annabhandar is rooted in the timeless principle that no devotee should ever leave the presence of the Lord with an empty stomach. This Mahaprasad Seva is a bridge between the spiritual and the physical, where every grain served is infused with the blessings of Lord Jagannath and the selfless devotion of our volunteers.
+              </p>
+              <p>
+                Following ancient Vedic traditions, our meals are prepared with utmost sanctity. We utilize traditional wood-fired clay stoves and earthen pots, ensuring that the natural flavors and spiritual purity of the Satvik ingredients remain intact. This methodical process, passed down through generations, transforms simple ingredients into a sacred offering that nourishes both the body and the soul. The aroma of fresh dalma and rice, prepared with pure ghee and seasonal vegetables, serves as a reminder of the Lord's infinite grace.
+              </p>
+              <p>
+                Our mission extends beyond the temple gates. Through Jagannath Annabhandar, we reach out to the elderly who live alone, sadhus on their spiritual journeys, and families facing temporary hardships. By participating in this Seva, you are not just providing a meal; you are participating in a divine cycle of giving and receiving that has sustained the community for centuries. Every contribution, no matter how small, helps us maintain this daily tradition of compassion, ensuring that the fire in our kitchen and the spirit of Jagannath Seva never fade.
+              </p>
             </div>
           </div>
         </div>
