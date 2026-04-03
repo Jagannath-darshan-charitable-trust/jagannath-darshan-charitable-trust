@@ -13,7 +13,7 @@ const breakdownItems = [
   {
     icon: Utensils,
     title: "Daily Annadanam",
-    description: "Provides wholesome Mahaprasad meals to devotees and those in need, ensuring no one goes hungry.",
+    description: "Provides wholesome Mahaprasad Bhog to devotees and those in need, ensuring no one goes hungry.",
     accent: "from-accent/20 to-accent/5",
     borderColor: "hover:border-accent/40",
     iconBg: "bg-accent/10",

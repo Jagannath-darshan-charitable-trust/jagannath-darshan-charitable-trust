@@ -21,9 +21,9 @@ const navItems = [
     label: "Our Seva",
     path: "/our-seva",
     children: [
-      { label: "Jagannath Gosala", subtitle: "Cow Protection & Care", path: "/our-seva/gosala" },
-      { label: "Jagannath Annabhandar", subtitle: "Mahaprasad Distribution", path: "/our-seva/annabhandar" },
-      { label: "Jagannath Mandir Nirman", subtitle: "Temple Construction", path: "/our-seva/mandir-nirman" },
+      { label: "Sri Jagannath Gosala", subtitle: "Cow Protection & Care", path: "/our-seva/gosala" },
+      { label: "Sri Jagannath Annabhandar", subtitle: "Mahaprasad Distribution", path: "/our-seva/annabhandar" },
+      { label: "Sri Jagannath Mandir Nirman", subtitle: "Temple Construction", path: "/our-seva/mandir-nirman" },
     ],
   },
   { label: "Donate", path: "/donate" },

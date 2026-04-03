@@ -25,7 +25,7 @@ const Footer = () => {
               />
             </div>
             <p className="mb-5 font-body text-sm leading-relaxed text-secondary-foreground/75">
-              Seva to Gau Mata, Annavandar Seva & All India Jagannath Mandir Nirman for Sanatan Dharma.
+              Seva to Gau Mata, Annavandar Seva & All India Sri Jagannath Mandir Nirman for Sanatan Dharma.
               <br />
               Inspired by Sri Bhabani Prasad Das Mohapatra, Chief Daitapati of Jagannath Temple, Puri.
             </p>
@@ -72,12 +72,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/our-seva/annabhandar" className="inline-flex items-center gap-2 text-secondary-foreground/65 transition-colors hover:text-accent">
-                  <Utensils size={13} className="text-accent/50" /> Jagannath Annabhandar
+                  <Utensils size={13} className="text-accent/50" /> Sri Jagannath Annabhandar
                 </Link>
               </li>
               <li>
                 <Link to="/our-seva/mandir-nirman" className="inline-flex items-center gap-2 text-secondary-foreground/65 transition-colors hover:text-accent">
-                  <Landmark size={13} className="text-accent/50" /> Jagannath Mandir Nirman
+                  <Landmark size={13} className="text-accent/50" /> Sri Jagannath Mandir Nirman
                 </Link>
               </li>
             </ul>

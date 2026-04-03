@@ -22,9 +22,9 @@ const OurSeva = () => {
       <section className="border-b border-border bg-card py-4">
         <div className="container-trust flex flex-wrap items-center justify-center gap-4 px-4">
           {[
-            { label: "Jagannath Gosala", href: "#gosala" },
-            { label: "Jagannath Annabhandar", href: "#annabhandar" },
-            { label: "Jagannath Mandir Nirman", href: "#mandir" },
+            { label: "Sri Jagannath Gosala", href: "#gosala" },
+            { label: "Sri Jagannath Annabhandar", href: "#annabhandar" },
+            { label: "Sri Jagannath Mandir Nirman", href: "#mandir" },
           ].map((item) => (
             <a
               key={item.label}
@@ -37,20 +37,20 @@ const OurSeva = () => {
         </div>
       </section>
 
-      {/* Jagannath Gosala Section */}
+      {/* Sri Jagannath Gosala Section */}
       <section id="gosala" className="section-padding scroll-mt-20">
         <div className="container-trust">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="overflow-hidden rounded-xl shadow-lg">
-              <img src={gosalaImage} alt="Jagannath Gosala - Cow Protection" className="h-96 w-full object-cover" loading="lazy" />
+              <img src={gosalaImage} alt="Sri Jagannath Gosala - Cow Protection" className="h-96 w-full object-cover" loading="lazy" />
             </div>
             <div>
               <div className="mb-3">
-                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Gosala</h2>
+                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Sri Jagannath Gosala</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Cow Protection & Care</p>
               <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
-                Our Jagannath Gosala provides shelter, nutritious food, medical care, and a loving environment
+                Our Sri Jagannath Gosala provides shelter, nutritious food, medical care, and a loving environment
                 for abandoned, injured, and aging cows. Every life is sacred, and protecting Gau Mata
                 is our dharmic duty. Currently caring for <strong className="text-foreground">1,200+ cows</strong> across multiple centers.
               </p>
@@ -78,25 +78,25 @@ const OurSeva = () => {
         </div>
       </section>
 
-      {/* Jagannath Annabhandar Section */}
+      {/* Sri Jagannath Annabhandar Section */}
       <section id="annabhandar" className="section-padding scroll-mt-20 bg-muted/50">
         <div className="container-trust">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="order-2 md:order-1">
               <div className="mb-3">
-                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Annabhandar</h2>
+                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Sri Jagannath Annabhandar</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Mahaprasad Distribution</p>
               <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">
                 Sacred Mahaprasad is distributed daily to thousands of devotees and underprivileged
                 families. No one should go hungry - this is the essence of Anna Seva. Our kitchens 
-                serve wholesome meals with love, devotion, and purity.
+                serve wholesome Bhog with love, devotion, and purity.
               </p>
 
               {/* Progress bar */}
               <div className="mb-6">
                 <div className="mb-2 flex items-center justify-between font-body text-sm">
-                  <span className="text-muted-foreground">Daily Meals Served</span>
+                  <span className="text-muted-foreground">Daily Bhog Served</span>
                   <span className="font-semibold text-impact">1,850 / 2,000</span>
                 </div>
                 <div className="h-3 overflow-hidden rounded-full bg-muted">
@@ -108,7 +108,7 @@ const OurSeva = () => {
               <ul className="mb-6 space-y-2">
                 {[
                   "Sponsor One Meal - ₹50",
-                  "Sponsor One Day Meals - ₹5,000",
+                  "Sponsor One Day Bhog - ₹5,000",
                   "Monthly Meal Sponsorship",
                   "Festival Special Bhandara",
                   "Corporate Sponsorship Options",
@@ -126,7 +126,7 @@ const OurSeva = () => {
               </Link>
             </div>
             <div className="order-1 overflow-hidden rounded-xl shadow-lg md:order-2">
-              <img src={annabhandarImage} alt="Jagannath Annabhandar - Food Distribution" className="h-96 w-full object-cover" loading="lazy" />
+              <img src={annabhandarImage} alt="Sri Jagannath Annabhandar - Food Distribution" className="h-96 w-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>
@@ -137,11 +137,11 @@ const OurSeva = () => {
         <div className="container-trust">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="overflow-hidden rounded-xl shadow-lg">
-              <img src={mandirImage} alt="Jagannath Mandir Nirman" className="h-96 w-full object-cover" loading="lazy" />
+              <img src={mandirImage} alt="Sri Jagannath Mandir Nirman" className="h-96 w-full object-cover" loading="lazy" />
             </div>
             <div>
               <div className="mb-3">
-                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Jagannath Mandir Nirman</h2>
+                <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Sri Jagannath Mandir Nirman</h2>
               </div>
               <p className="mb-1 font-body text-base font-medium text-primary">Jagannath Temple Construction</p>
               <p className="mb-6 font-body text-sm leading-relaxed text-muted-foreground text-left md:text-justify">

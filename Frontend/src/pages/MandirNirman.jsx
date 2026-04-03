@@ -31,7 +31,7 @@ const MandirNirman = () => {
         
         <div className="container-trust relative z-10">
           <h1 className="font-heading text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
-            Jagannath Mandir Nirman
+            Sri Jagannath Mandir Nirman
           </h1>
           <p className="mt-4 font-body text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             Building sacred abodes across the nation to preserve our timeless Sanatan Dharma.
@@ -76,11 +76,11 @@ const MandirNirman = () => {
         <div className="container-trust">
           <div className="mx-auto max-w-4xl">
             <h2 className="mb-10 text-center font-heading text-2xl font-bold text-foreground md:text-3xl">
-              The Grand Vision: All India Jagannath Mandir Nirman
+              The Grand Vision: All India Sri Jagannath Mandir Nirman
             </h2>
             <div className="space-y-8 font-body text-base leading-relaxed text-muted-foreground text-justify">
               <p>
-                Lord Jagannath, the "Lord of the Universe," is not just a deity residing in the coastal city of Puri; He is the soul of Sanatan Dharma, the symbol of equality, and the embodiment of divine love. The "All India Jagannath Mandir Nirman" initiative by the Jagannath Darshan Charitable Trust is a sacred endeavor to manifest this universal presence across the length and breadth of our vast nation. Our vision is to establish grand temples-each a sanctuary of peace, a beacon of spiritual wisdom, and a testament to our rich heritage.
+                Lord Jagannath, the "Lord of the Universe," is not just a deity residing in the coastal city of Puri; He is the soul of Sanatan Dharma, the symbol of equality, and the embodiment of divine love. The "All India Sri Jagannath Mandir Nirman" initiative by the Jagannath Darshan Charitable Trust is a sacred endeavor to manifest this universal presence across the length and breadth of our vast nation. Our vision is to establish grand temples-each a sanctuary of peace, a beacon of spiritual wisdom, and a testament to our rich heritage.
               </p>
               <p>
                 These temples are envisioned not merely as structures of stone and mortar, but as vibrant spiritual ecosystems. In our tradition, establishing such centers holds profound cosmic significance, representing the completion of a spiritual journey. By establishing these centers, we aim to ensure that the transformative energy of the Jagannath Rath Yatra and the sanctity of the Mahaprasad are accessible to every devotee, regardless of their geographical location. We believe that bringing the Lord closer to the people is the highest service we can perform for the preservation of our cultural and spiritual roots.
@@ -89,7 +89,7 @@ const MandirNirman = () => {
                 The architectural philosophy of these temples draws inspiration from the majestic Kalinga style, characterized by its towering "Rekha Deulas" and intricate stone carvings. Every temple will be constructed following the strict principles of ancient Vastu Shastra and Shilpa Shastra, ensuring that they become conduits for positive cosmic energy. The use of traditional materials-granite, sandstone, and wood-processed by skilled artisans whose families have served the Lord for generations, ensures that each structure is both a work of art and a timeless monument to faith.
               </p>
               <p>
-                However, the "All India Jagannath Mandir Nirman" project goes far beyond the construction of shrines. Each temple complex is designed to be a comprehensive community hub. Adjacent to the main sanctum, we are establishing Veda Pathshalas to revive the ancient oral traditions of our scriptures, ensuring that our youth remain connected to their identity. Furthermore, every location will feature an "Annabhandar" (community kitchen) to provide free Satvik meals to thousands, a "Seva Kendra" to offer basic healthcare to the underprivileged, and spaces for traditional arts and music to flourish.
+                However, the "All India Sri Jagannath Mandir Nirman" project goes far beyond the construction of shrines. Each temple complex is designed to be a comprehensive community hub. Adjacent to the main sanctum, we are establishing Veda Pathshalas to revive the ancient oral traditions of our scriptures, ensuring that our youth remain connected to their identity. Furthermore, every location will feature an "Annabhandar" (community kitchen) to provide free Satvik Bhog to thousands, a "Seva Kendra" to offer basic healthcare to the underprivileged, and spaces for traditional arts and music to flourish.
               </p>
               <p>
                 This is a historic mission that calls for the collective strength of the global devotee community. Building a temple is considered a sacred endeavor-an eternal legacy a person can leave behind. It is a rare opportunity to contribute to a cause that will continue to nourish souls and serve humanity for hundreds of years to come. Whether through the donation of a single brick, the sponsorship of a pillar, or the offering of your time and skills, your involvement in this Nirman Seva is a direct participation in the Lord’s own work. Together, let us build these abodes of light and ensure that the legacy of Jagannath Mahaprabhu continues to guide future generations toward a life of dharma, compassion, and unity.

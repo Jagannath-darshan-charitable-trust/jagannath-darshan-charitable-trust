@@ -4,26 +4,26 @@ import { MapPin, Phone, Mail, Clock, Heart, HandHeart, Users, HelpCircle, Chevro
 const faqs = [
   {
     q: "How can I volunteer with the trust?",
-    a: "We welcome sevaks from all walks of life! You can join our daily Jagannath Gosala seva, help with Jagannath Annabhandar food preparation, assist in temple construction activities, or support our administrative work. Reach out via the form above or call us directly to get started.",
+    a: "We welcome sevaks from all walks of life! You can join our daily Sri Jagannath Gosala seva, help with Sri Jagannath Annabhandar food preparation, assist in temple construction activities, or support our administrative work. Reach out via the form above or call us directly to get started.",
   },
   {
     q: "Are donations tax-exempt?",
     a: "Yes, all donations to Jagannath Darshan Charitable Trust are eligible for tax exemption under Section 80G of the Income Tax Act. You will receive an official donation receipt via email for your records.",
   },
   {
-    q: "Can I visit the Jagannath Gosala or temple construction sites?",
-    a: "Absolutely! We encourage visitors to experience our seva first-hand. Our Jagannath Gosala is open daily from 6:00 AM to 7:00 PM. For temple construction site visits, please contact us in advance so we can arrange a guided tour.",
+    q: "Can I visit the Sri Jagannath Gosala or temple construction sites?",
+    a: "Absolutely! We encourage visitors to experience our seva first-hand. Our Sri Jagannath Gosala is open daily from 6:00 AM to 7:00 PM. For temple construction site visits, please contact us in advance so we can arrange a guided tour.",
   },
   {
     q: "How is my donation utilized?",
-    a: "We maintain complete transparency - 35% goes to Jagannath Gosala (cow feed & medical care), 30% to Jagannath Annabhandar (daily Mahaprasad), 25% to Jagannath Mandir Nirman (temple construction), and 10% to administration. Annual audit reports are publicly available.",
+    a: "We maintain complete transparency - 35% goes to Sri Jagannath Gosala (cow feed & medical care), 30% to Sri Jagannath Annabhandar (daily Mahaprasad), 25% to Sri Jagannath Mandir Nirman (temple construction), and 10% to administration. Annual audit reports are publicly available.",
   },
 ];
 
 const inquiryTypes = [
   { icon: HandHeart, title: "Volunteer", desc: "Join our seva family and make a hands-on impact in your community." },
   { icon: Heart, title: "Donate", desc: "Learn about donation options, recurring giving, and corporate partnerships." },
-  { icon: Landmark, title: "Visit Us", desc: "Plan a visit to our Jagannath Gosala, Jagannath Annabhandar kitchen, or temple sites." },
+  { icon: Landmark, title: "Visit Us", desc: "Plan a visit to our Sri Jagannath Gosala, Sri Jagannath Annabhandar kitchen, or temple sites." },
   { icon: Users, title: "Partner", desc: "Explore collaboration opportunities for CSR, events, or outreach programs." },
 ];
 

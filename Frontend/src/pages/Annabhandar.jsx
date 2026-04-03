@@ -14,8 +14,8 @@ const galleryImages = [
   { src: annabhandar7, alt: "Meal preparation", caption: "Kitchen Seva" },
   { src: annabhandar8, alt: "Devotees taking parsad", caption: "Feeding Souls" },
   { src: annabhandar9, alt: "Traditional leaf serving", caption: "Satvik Tradition" },
-  { src: annabhandar10, alt: "Community Bhandara", caption: "Community Meals" },
-  { src: annabhandar11, alt: "Mahaprasad diversity", caption: "Wholesome Meals" },
+  { src: annabhandar10, alt: "Community Bhandara", caption: "Community Bhog" },
+  { src: annabhandar11, alt: "Mahaprasad diversity", caption: "Wholesome Bhog" },
 ];
 
 const Annabhandar = () => {
@@ -28,7 +28,7 @@ const Annabhandar = () => {
         </div>
         <div className="container-trust relative z-10">
           <h1 className="font-heading text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
-            Jagannath Annabhandar
+            Sri Jagannath Annabhandar
           </h1>
           <p className="mt-4 font-body text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             Feeding the Hungry with Love and Devotion through Mahaprasad Seva.
@@ -45,10 +45,10 @@ const Annabhandar = () => {
                 No One Should Go Hungry
               </h2>
               <p className="mb-4 font-body text-base leading-relaxed text-muted-foreground text-justify">
-                In our culture, donating food (Anna Daan) is considered the highest form of charity. Our Jagannath Annabhandar initiative ensures that thousands of devotees, sadhus, and underprivileged families receive fresh, nutritious, and satvik Mahaprasad every day.
+                In our culture, donating food (Anna Daan) is considered the highest form of charity. Our Sri Jagannath Annabhandar initiative ensures that thousands of devotees, sadhus, and underprivileged families receive fresh, nutritious, and satvik Mahaprasad every day.
               </p>
               <p className="mb-6 font-body text-base leading-relaxed text-muted-foreground text-justify">
-                We believe that food is not just nourishment for the body but also for the soul. That is why every meal is prepared with purity and offered to the Lord before distribution. Currently, we serve over <strong className="text-foreground">2,000+ meals daily</strong>.
+                We believe that food is not just nourishment for the body but also for the soul. That is why every meal is prepared with purity and offered to the Lord before distribution. Currently, we serve over <strong className="text-foreground">2,000+ Bhog daily</strong>.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="rounded-lg bg-accent/10 px-4 py-2 text-accent-foreground">
@@ -61,7 +61,7 @@ const Annabhandar = () => {
             </div>
             <div className="order-1 space-y-4 md:order-2">
               <div className="overflow-hidden rounded-xl shadow-lg">
-                <img src={annabhandarImage} alt="Jagannath Annabhandar" className="h-96 w-full object-cover" />
+                <img src={annabhandarImage} alt="Sri Jagannath Annabhandar" className="h-96 w-full object-cover" />
               </div>
             </div>
           </div>
@@ -77,13 +77,13 @@ const Annabhandar = () => {
             </h2>
             <div className="space-y-6 font-body text-base leading-relaxed text-muted-foreground text-justify">
               <p>
-                In the sacred traditions of Jagannath Puri, food is not merely sustenance but a manifestation of "Anna Brahma"-the Divine in the form of grain. The tradition of Jagannath Annabhandar is rooted in the timeless principle that no devotee should ever leave the presence of the Lord with an empty stomach. This Mahaprasad Seva is a bridge between the spiritual and the physical, where every grain served is infused with the blessings of Lord Jagannath and the selfless devotion of our volunteers.
+                In the sacred traditions of Jagannath Puri, food is not merely sustenance but a manifestation of "Anna Brahma"-the Divine in the form of grain. The tradition of Sri Jagannath Annabhandar is rooted in the timeless principle that no devotee should ever leave the presence of the Lord with an empty stomach. This Mahaprasad Seva is a bridge between the spiritual and the physical, where every grain served is infused with the blessings of Lord Jagannath and the selfless devotion of our volunteers.
               </p>
               <p>
-                Following ancient Vedic traditions, our meals are prepared with utmost sanctity. We utilize traditional wood-fired clay stoves and earthen pots, ensuring that the natural flavors and spiritual purity of the Satvik ingredients remain intact. This methodical process, passed down through generations, transforms simple ingredients into a sacred offering that nourishes both the body and the soul. The aroma of fresh dalma and rice, prepared with pure ghee and seasonal vegetables, serves as a reminder of the Lord's infinite grace.
+                Following ancient Vedic traditions, our Bhog are prepared with utmost sanctity. We utilize traditional wood-fired clay stoves and earthen pots, ensuring that the natural flavors and spiritual purity of the Satvik ingredients remain intact. This methodical process, passed down through generations, transforms simple ingredients into a sacred offering that nourishes both the body and the soul. The aroma of fresh dalma and rice, prepared with pure ghee and seasonal vegetables, serves as a reminder of the Lord's infinite grace.
               </p>
               <p>
-                Our mission extends beyond the temple gates. Through Jagannath Annabhandar, we reach out to the elderly who live alone, sadhus on their spiritual journeys, and families facing temporary hardships. By participating in this Seva, you are not just providing a meal; you are participating in a divine cycle of giving and receiving that has sustained the community for centuries. Every contribution, no matter how small, helps us maintain this daily tradition of compassion, ensuring that the fire in our kitchen and the spirit of Jagannath Seva never fade.
+                Our mission extends beyond the temple gates. Through Sri Jagannath Annabhandar, we reach out to the elderly who live alone, sadhus on their spiritual journeys, and families facing temporary hardships. By participating in this Seva, you are not just providing a meal; you are participating in a divine cycle of giving and receiving that has sustained the community for centuries. Every contribution, no matter how small, helps us maintain this daily tradition of compassion, ensuring that the fire in our kitchen and the spirit of Jagannath Seva never fade.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ const Annabhandar = () => {
            <h2 className="mb-8 font-heading text-2xl font-bold text-foreground md:text-3xl">Our Daily Impact</h2>
            <div className="grid gap-6 md:grid-cols-3">
             {[
-              { title: "Meals Served", value: "2,000+", desc: "Fresh meals served daily to devotees and the needy." },
+              { title: "Bhog Served", value: "2,000+", desc: "Fresh Bhog served daily to devotees and the needy." },
               { title: "Days Active", value: "365", desc: "Our kitchen runs every single day of the year." },
               { title: "Distribution Spots", value: "5+", desc: "Serving at key locations near temples and shelters." },
             ].map((item, index) => (
@@ -141,13 +141,13 @@ const Annabhandar = () => {
              <div className="rounded-xl bg-primary-foreground/10 p-6 backdrop-blur-sm border-2 border-cta">
                 <div className="mb-2 -mt-4 inline-block rounded bg-cta px-3 py-1 text-xs font-bold text-cta-foreground">Most Popular</div>
                 <h3 className="mb-2 font-heading text-xl font-bold">Sponsor a Day</h3>
-                <p className="mb-4 text-sm opacity-90">Cover the cost of meals for an entire day.</p>
+                <p className="mb-4 text-sm opacity-90">Cover the cost of Bhog for an entire day.</p>
                 <p className="mb-6 text-2xl font-bold">₹5,000 <span className="text-xs font-normal">/ day</span></p>
                 <Link to="/donate" className="inline-block w-full rounded-lg bg-cta px-4 py-2 font-body text-sm font-bold text-cta-foreground hover:bg-cta/90">Sponsor Full Day</Link>
              </div>
              <div className="rounded-xl bg-primary-foreground/10 p-6 backdrop-blur-sm">
                 <h3 className="mb-2 font-heading text-xl font-bold">Monthly Seva</h3>
-                <p className="mb-4 text-sm opacity-90">Become a monthly donor for Jagannath Annabhandar.</p>
+                <p className="mb-4 text-sm opacity-90">Become a monthly donor for Sri Jagannath Annabhandar.</p>
                 <p className="mb-6 text-2xl font-bold">Any Amount</p>
                 <Link to="/donate" className="inline-block w-full rounded-lg bg-cta px-4 py-2 font-body text-sm font-bold text-cta-foreground hover:bg-cta/90">Donate Monthly</Link>
              </div>
@@ -168,7 +168,7 @@ const Annabhandar = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-heading text-sm font-semibold text-foreground">Kitchen Location</h4>
-                    <p className="text-sm text-muted-foreground">Jagannath Annabhandar, Near Gundicha Temple, Puri</p>
+                    <p className="text-sm text-muted-foreground">Sri Jagannath Annabhandar, Near Gundicha Temple, Puri</p>
                   </div>
                   <div>
                     <h4 className="font-heading text-sm font-semibold text-foreground">Serving Times</h4>

@@ -61,7 +61,7 @@ const HeroSection = () => {
           ,{" "}
           <span className="text-gradient-gold">Annavandar Seva</span>
           {" "} &{" "}
-          <span className="text-gradient-gold">Jagannath Mandir Nirman</span>
+          <span className="text-gradient-gold">Sri Jagannath Mandir Nirman</span>
           {" "}for Sanatan Dharma
         </h1>
 

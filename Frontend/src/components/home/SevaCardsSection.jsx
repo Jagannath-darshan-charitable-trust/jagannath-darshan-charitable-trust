@@ -6,7 +6,7 @@ import mandirImage from "@/assets/Mandir2.webp";
 
 const sevaCards = [
   {
-    title: "Jagannath Gosala",
+    title: "Sri Jagannath Gosala",
     subtitle: "Cow Protection & Care",
     description: "Provide shelter, food, and medical care to abandoned and injured cows. Adopt a cow or sponsor monthly care.",
     image: gosalaImage,
@@ -15,16 +15,16 @@ const sevaCards = [
     num: "01",
   },
   {
-    title: "Jagannath Annabhandar",
+    title: "Sri Jagannath Annabhandar",
     subtitle: "Mahaprasad Distribution",
-    description: "Feed the hungry with sacred Mahaprasad. Sponsor meals for devotees and the underprivileged every day.",
+    description: "Feed the hungry with sacred Mahaprasad. Sponsor Bhog for devotees and the underprivileged every day.",
     image: annabhandarImage,
     icon: Utensils,
     link: "/our-seva/annabhandar",
     num: "02",
   },
   {
-    title: "Jagannath Mandir Nirman",
+    title: "Sri Jagannath Mandir Nirman",
     subtitle: "Jagannath Temple Construction",
     description: "Help build Jagannath temples across India. Donate a brick, sponsor a pillar, and spread Sanatan Dharma.",
     image: mandirImage,

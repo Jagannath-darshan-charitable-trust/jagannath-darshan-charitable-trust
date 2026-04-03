@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Heart, Utensils, Landmark, ShieldCheck, CreditCard, HandHeart, Users, CheckCircle2, TrendingUp, FileText, IndianRupee } from "lucide-react";
+import { Heart, Utensils, Landmark, ShieldCheck, CreditCard, HandHeart, Users, CheckCircle2, TrendingUp, FileText, IndianRupee, X, Copy, Info, Check } from "lucide-react";
 import DonateUs from "@/assets/DonateUs.webp";
 
 const purposes = [
-  { value: "gosala", label: "Jagannath Gosala - Cow Protection", icon: Heart },
-  { value: "annabhandar", label: "Jagannath Annabhandar - Food Distribution", icon: Utensils },
-  { value: "mandir", label: "Jagannath Mandir Nirman - Temple Construction", icon: Landmark },
+  { value: "gosala", label: "Sri Jagannath Gosala - Cow Protection", icon: Heart },
+  { value: "annabhandar", label: "Sri Jagannath Annabhandar - Food Distribution", icon: Utensils },
+  { value: "mandir", label: "Sri Jagannath Mandir Nirman - Temple Construction", icon: Landmark },
   { value: "general", label: "General Trust Fund", icon: ShieldCheck },
 ];
 
@@ -15,12 +15,12 @@ const whyDonateReasons = [
   {
     icon: Heart,
     title: "Serve Gau Mata",
-    desc: "Your donation directly feeds, shelters, and provides medical care to 1,200+ abandoned and aging cows at our Jagannath Gosala.",
+    desc: "Your donation directly feeds, shelters, and provides medical care to 1,200+ abandoned and aging cows at our Sri Jagannath Gosala.",
   },
   {
     icon: Utensils,
     title: "Feed the Hungry",
-    desc: "Through Jagannath Annabhandar, we serve free Mahaprasad daily to thousands of devotees, pilgrims, and underprivileged families.",
+    desc: "Through Sri Jagannath Annabhandar, we serve free Mahaprasad daily to thousands of devotees, pilgrims, and underprivileged families.",
   },
   {
     icon: Landmark,
@@ -30,15 +30,15 @@ const whyDonateReasons = [
 ];
 
 const donationUsage = [
-  { label: "Jagannath Gosala - Cow Feed & Medical Care", percent: 35, color: "bg-primary" },
-  { label: "Jagannath Annabhandar - Food & Kitchen Supplies", percent: 30, color: "bg-accent" },
-  { label: "Jagannath Mandir Nirman - Construction & Materials", percent: 25, color: "bg-cta" },
+  { label: "Sri Jagannath Gosala - Cow Feed & Medical Care", percent: 35, color: "bg-primary" },
+  { label: "Sri Jagannath Annabhandar - Food & Kitchen Supplies", percent: 30, color: "bg-accent" },
+  { label: "Sri Jagannath Mandir Nirman - Construction & Materials", percent: 25, color: "bg-cta" },
   { label: "Administration & Operations", percent: 10, color: "bg-muted-foreground" },
 ];
 
 const impactStats = [
   { value: "1,200+", label: "Cows Cared For", icon: Heart },
-  { value: "5,000+", label: "Meals Served Daily", icon: Utensils },
+  { value: "5,000+", label: "Bhog Served Daily", icon: Utensils },
   { value: "10,000+", label: "Seva Family Members", icon: Users },
   { value: "3+", label: "Temples Under Construction", icon: Landmark },
 ];
@@ -48,6 +48,14 @@ const Donate = () => {
   const [selectedAmount, setSelectedAmount] = useState(1100);
   const [customAmount, setCustomAmount] = useState("");
   const [purpose, setPurpose] = useState("gosala");
+  const [showModal, setShowModal] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("50200089632946");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const finalAmount = selectedAmount || Number(customAmount) || 0;
 
@@ -217,13 +225,10 @@ const Donate = () => {
               </div>
             </div>
 
-            <div className="mb-4 flex items-center gap-2 rounded-lg bg-muted p-3 font-body text-xs text-muted-foreground">
-              <ShieldCheck size={16} className="shrink-0 text-impact" />
-              All donations are 80G tax-exempt. You will receive a receipt via email.
-            </div>
-
             {/* Pay Button */}
             <button
+              onClick={() => setShowModal(true)}
+              type="button"
               className="flex w-full items-center justify-center gap-2 rounded-lg bg-cta py-3.5 font-body text-base font-semibold text-cta-foreground transition hover:bg-cta/90 disabled:opacity-50"
               disabled={finalAmount < 1}
             >
@@ -233,8 +238,9 @@ const Donate = () => {
                 : "Select an Amount"}
             </button>
 
-            <p className="mt-3 text-center font-body text-xs text-muted-foreground">
-              Powered by Razorpay (Integration Coming Soon)
+            <p className="mt-3 flex items-center justify-center gap-1.5 text-center font-body text-xs text-muted-foreground">
+              <ShieldCheck size={14} className="text-emerald-500" />
+              100% Secure Donations
             </p>
           </div>
         </div>
@@ -339,6 +345,76 @@ const Donate = () => {
           </p>
         </div>
       </section>
+
+      {/* Maintenance Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 px-4 backdrop-blur-sm">
+          <div 
+            className="w-full max-w-md scale-100 overflow-hidden rounded-2xl border border-border bg-card shadow-2xl transition-all duration-300"
+            style={{ animation: 'modal-pop 0.3s ease-out' }}
+          >
+            <div className="flex items-center justify-between border-b border-border bg-muted/50 px-6 py-4">
+              <div className="flex items-center gap-2 text-foreground">
+                <Info size={20} className="text-primary" />
+                <h3 className="font-heading text-lg font-semibold">Payment Gateway Notice</h3>
+              </div>
+              <button 
+                onClick={() => setShowModal(false)}
+                className="rounded-full p-1.5 text-muted-foreground transition hover:bg-muted hover:text-foreground hover:shadow-sm"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            
+            <div className="p-6">
+              <div className="mb-6 rounded-xl border border-amber-500/20 bg-amber-500/10 p-4 text-amber-700 dark:text-amber-400">
+                <p className="font-body text-sm leading-relaxed">
+                  Our online payment gateway is currently under maintenance. We apologize for the inconvenience. 
+                  Please use direct bank transfer to make your generous contribution offline.
+                </p>
+              </div>
+              
+              <div className="mb-6">
+                <p className="mb-3 font-heading text-sm font-semibold text-foreground text-center">Official Trust Account Details</p>
+                <div className="rounded-xl border border-border bg-background p-4 shadow-inner">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-body text-xs uppercase tracking-wider text-muted-foreground mb-0.5">Account Number</p>
+                      <p className="font-heading text-xl font-bold tracking-widest text-foreground">50200089632946</p>
+                    </div>
+                    <button 
+                      onClick={handleCopy}
+                      className={`flex items-center gap-1.5 rounded-lg border px-3 py-2 font-body text-xs font-medium transition ${
+                        copied 
+                          ? "border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400" 
+                          : "border-border bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground"
+                      }`}
+                      title="Copy Account Number"
+                    >
+                      {copied ? <Check size={16} /> : <Copy size={16} />}
+                      <span className="hidden sm:inline">{copied ? "Copied!" : "Copy"}</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                onClick={() => setShowModal(false)}
+                className="w-full rounded-lg bg-primary py-3.5 font-body text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90 hover:shadow"
+              >
+                I Understand, Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      
+      <style>{`
+        @keyframes modal-pop {
+          0% { opacity: 0; transform: scale(0.95); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+      `}</style>
     </div>
   );
 };

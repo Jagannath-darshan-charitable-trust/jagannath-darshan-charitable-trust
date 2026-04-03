@@ -24,14 +24,14 @@ const useFadeIn = () => {
 const pillars = [
   {
     icon: Landmark,
-    title: "Jagannath Mandir Nirman",
+    title: "Sri Jagannath Mandir Nirman",
     desc: "Building vibrant spiritual centers across Bharat where kirtan, seva, and scriptural wisdom unite communities in devotion.",
     gradient: "from-amber-500/20 to-amber-500/5",
   },
   {
     icon: Heart,
     title: "Jagannath Gau Seva",
-    desc: "Establishing well-organized Jagannath Gosala ensuring compassionate care, protection, and dignified living for Gau Mata.",
+    desc: "Establishing well-organized Sri Jagannath Gosala ensuring compassionate care, protection, and dignified living for Gau Mata.",
     gradient: "from-rose-500/20 to-rose-500/5",
   },
   {
@@ -131,7 +131,7 @@ const VisionSection = () => {
                   </p>
                   <p>
                     We are equally committed to establishing and sustaining
-                    well-organized Jagannath Gosala that ensure compassionate care,
+                    well-organized Sri Jagannath Gosala that ensure compassionate care,
                     protection, and dignified living conditions for cows,
                     revered as sacred embodiments of selfless giving. Through
                     structured management, veterinary care, and community
@@ -141,7 +141,7 @@ const VisionSection = () => {
                   <p>
                     Annadan, offered in humility before Sri Jagannath, will
                     remain a core pillar of our service. By distributing
-                    sanctified meals prepared with devotion, we strive to
+                    sanctified Bhog prepared with devotion, we strive to
                     alleviate hunger while nurturing spiritual consciousness.
                     Our mission is to transform service into devotion, devotion
                     into culture, and culture into a living legacy of Sri
@@ -180,7 +180,7 @@ const VisionSection = () => {
                     Our vision is to establish a spiritually awakened Bharat
                     rooted in the divine grace and universal compassion of Sri
                     Jagannath. We envision a sacred movement dedicated to
-                    Jagannath Mandir Nirman across all India, creating spiritual
+                    Sri Jagannath Mandir Nirman across all India, creating spiritual
                     centers where devotion, dharma, and community service
                     flourish together. These temples will not merely be places
                     of worship, but vibrant cultural hubs preserving Sanatan
@@ -191,14 +191,14 @@ const VisionSection = () => {
                     We aspire to see every region of India blessed with a
                     Jagannath Mandir that nurtures bhakti, unity, and spiritual
                     education. Alongside temple construction, our vision
-                    includes structured Jagannath Gosala for Jagannath Gau Seva, ensuring
+                    includes structured Sri Jagannath Gosala for Jagannath Gau Seva, ensuring
                     protection, care, and dignity for cows as sacred embodiments
                     of compassion and selfless giving.
                   </p>
                   <p>
                     Annadan under the blessings of Sri Jagannath will be
                     sustained as a nationwide seva movement, ensuring that
-                    sanctified meals (Mahaprasad) reach the needy with love and
+                    sanctified Bhog (Mahaprasad) reach the needy with love and
                     equality. Through youth engagement, community participation,
                     and transparent service initiatives, we envision a
                     spiritually harmonious society where devotion is practiced
@@ -206,7 +206,7 @@ const VisionSection = () => {
                   </p>
                   <p>
                     Our ultimate vision is a united India spiritually connected
-                    through Jagannath devotion, where temples, Jagannath Gosala, and
+                    through Jagannath devotion, where temples, Sri Jagannath Gosala, and
                     Annadan become pillars of dharma, compassion, and cultural
                     revival.
                   </p>

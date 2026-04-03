@@ -11,24 +11,24 @@ import FAQSection from "@/components/home/FAQSection";
 
 const impactStats = [
   { number: "1,200+", label: "Cows Protected", icon: Heart, gradient: "from-rose-500/20 to-rose-500/5" },
-  { number: "50,000+", label: "Meals Served Monthly", icon: Utensils, gradient: "from-amber-500/20 to-amber-500/5" },
+  { number: "50,000+", label: "Bhog Served Monthly", icon: Utensils, gradient: "from-amber-500/20 to-amber-500/5" },
   { number: "15", label: "Temples Under Construction", icon: Landmark, gradient: "from-emerald-500/20 to-emerald-500/5" },
   { number: "10,000+", label: "Sevaks Nationwide", icon: Users, gradient: "from-blue-500/20 to-blue-500/5" },
 ];
 
 const testimonials = [
   {
-    quote: "Donating to the Jagannath Gosala project gave me immense peace. Knowing that Gau Mata is being taken care of fills my heart with joy.",
+    quote: "Donating to the Sri Jagannath Gosala project gave me immense peace. Knowing that Gau Mata is being taken care of fills my heart with joy.",
     name: "Smt. Radha Devi",
     location: "Bhubaneswar, Odisha",
   },
   {
-    quote: "The Jagannath Annabhandar seva is truly divine. I have seen thousands of people being fed Mahaprasad with such devotion and love.",
+    quote: "The Sri Jagannath Annabhandar seva is truly divine. I have seen thousands of people being fed Mahaprasad with such devotion and love.",
     name: "Sri Mohan Das",
     location: "Puri, Odisha",
   },
   {
-    quote: "Contributing to the Jagannath Mandir Nirman project feels like building a bridge to the divine. Jai Jagannath!",
+    quote: "Contributing to the Sri Jagannath Mandir Nirman project feels like building a bridge to the divine. Jai Jagannath!",
     name: "Sri Ramesh Panda",
     location: "Cuttack, Odisha",
   },

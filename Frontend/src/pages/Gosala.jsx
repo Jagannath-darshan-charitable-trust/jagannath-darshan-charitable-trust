@@ -13,16 +13,16 @@ import gosala14 from "@/assets/Gosala14.webp";
 import gosala17 from "@/assets/Gosala17.webp";
 
 const galleryImages = [
-  { src: gosala6, alt: "Cows grazing in the Jagannath Gosala", caption: "Open Grazing" },
+  { src: gosala6, alt: "Cows grazing in the Sri Jagannath Gosala", caption: "Open Grazing" },
   { src: gosala7, alt: "Feeding the cows", caption: "Daily Feeding" },
   { src: gosala8, alt: "Healthy cows at the shelter", caption: "Healthy & Happy" },
-  { src: gosala9, alt: "Calves at the Jagannath Gosala", caption: "Young Calves" },
+  { src: gosala9, alt: "Calves at the Sri Jagannath Gosala", caption: "Young Calves" },
   { src: gosala10, alt: "Veterinary care for cows", caption: "Medical Care" },
-  { src: gosala11, alt: "Cow shed at Jagannath Gosala", caption: "Safe Shelter" },
+  { src: gosala11, alt: "Cow shed at Sri Jagannath Gosala", caption: "Safe Shelter" },
   { src: gosala12, alt: "Sevaks caring for cows", caption: "Seva in Action" },
   { src: gosala13, alt: "Cows resting peacefully", caption: "Peaceful Rest" },
-  { src: gosala14, alt: "Evening Feeding at Jagannath Gosala", caption: "Evening Feeding" },
-  { src: gosala17, alt: "Sacred cow at Jagannath Gosala", caption: "Sacred Gau Mata" },
+  { src: gosala14, alt: "Evening Feeding at Sri Jagannath Gosala", caption: "Evening Feeding" },
+  { src: gosala17, alt: "Sacred cow at Sri Jagannath Gosala", caption: "Sacred Gau Mata" },
 ];
 const Gosala = () => {
   return (
@@ -34,7 +34,7 @@ const Gosala = () => {
         </div>
         <div className="container-trust relative z-10">
           <h1 className="font-heading text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
-            Jagannath Gosala
+            Sri Jagannath Gosala
           </h1>
           <p className="mt-4 font-body text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             Restoring the Divine Bond between Sri Jagannath and Gau Mata through Compassionate Service.
@@ -64,7 +64,7 @@ const Gosala = () => {
                   In the sacred traditions of Puri, the relationship between Lord Jagannath and the cow (Gau Mata) is deeply intertwined, echoing the eternal pastimes of Jagannath as Krishna, the divine cowherd 'Gopala'. The cow is not merely an animal in the Jagannath culture; she is a mother, a sustainer of life, and a symbol of Earth’s fertility and peace.
                 </p>
                 <p>
-                  It is said that in the presence of cows, the Lord finds His greatest joy. The Jagannath Gosala is established with the vision that serving a cow is equivalent to serving Mahaprabhu Himself. According to ancient scriptures, the cow is the abode of all devatas, and by protecting her, we protect the very foundations of Sanatana Dharma. Our mission is to restore this ancient bond, ensuring that every cow in our care is treated with the same reverence as the deities in the temple.
+                  It is said that in the presence of cows, the Lord finds His greatest joy. The Sri Jagannath Gosala is established with the vision that serving a cow is equivalent to serving Mahaprabhu Himself. According to ancient scriptures, the cow is the abode of all devatas, and by protecting her, we protect the very foundations of Sanatana Dharma. Our mission is to restore this ancient bond, ensuring that every cow in our care is treated with the same reverence as the deities in the temple.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 pt-4">
@@ -91,7 +91,7 @@ const Gosala = () => {
                   Go-Seva, or the service to cows, is considered one of the highest forms of 'Punya' (merit) in our tradition. It is believed that 'Gomata' carries the essence of the divine, and her presence brings prosperity, health, and spiritual upliftment to the surroundings. In the context of Sri Jagannath’s Mahaprasad, the role of cows is pivotal, as pure ghee and milk are essential components of many offerings.
                 </p>
                 <p className="font-body text-base leading-relaxed text-muted-foreground text-justify">
-                  By maintaining the Jagannath Gosala, we ensure that the principles of 'Ahimsa' (non-violence) and compassion are practiced daily. Every morning, as the sun rises over the horizon, the air in our Gosala is filled with the chanting of Vedic mantras, creating a vibration that heals both the animals and the sevaks. This spiritual atmosphere reinforces our belief that cow protection is not just a social duty but a path to liberation.
+                  By maintaining the Sri Jagannath Gosala, we ensure that the principles of 'Ahimsa' (non-violence) and compassion are practiced daily. Every morning, as the sun rises over the horizon, the air in our Gosala is filled with the chanting of Vedic mantras, creating a vibration that heals both the animals and the sevaks. This spiritual atmosphere reinforces our belief that cow protection is not just a social duty but a path to liberation.
                 </p>
               </div>
               
@@ -101,7 +101,7 @@ const Gosala = () => {
                   Our Gosala serves as a sanctuary for those who have nowhere else to go. Many of the cows in our care are rescued from situations of neglect, abandonment, or potential harm. We provide a lifetime of care for 'Vridha' (aging) cows, bull calves, and those who are no longer productive in a commercial sense.
                 </p>
                 <p className="font-body text-base leading-relaxed text-muted-foreground text-justify">
-                  At Jagannath Gosala, we believe that a cow's value is not measured by her milk yield but by her intrinsic divinity. Our facilities are designed to provide ample space for grazing, clean water sources, and specialized medical areas for the injured and sick. We focus on 'Satvik' care, ensuring that the cows are happy, stress-free, and healthy. This mission is sustained by the faith of devotees who understand that every Gau-Mata rescued is a victory for humanity.
+                  At Sri Jagannath Gosala, we believe that a cow's value is not measured by her milk yield but by her intrinsic divinity. Our facilities are designed to provide ample space for grazing, clean water sources, and specialized medical areas for the injured and sick. We focus on 'Satvik' care, ensuring that the cows are happy, stress-free, and healthy. This mission is sustained by the faith of devotees who understand that every Gau-Mata rescued is a victory for humanity.
                 </p>
               </div>
             </div>
@@ -181,7 +181,7 @@ const Gosala = () => {
       <section className="section-padding">
         <div className="container-trust">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl font-bold text-foreground">Glimpses of Jagannath Gosala</h2>
+            <h2 className="font-heading text-3xl font-bold text-foreground">Glimpses of Sri Jagannath Gosala</h2>
             <p className="mt-2 text-muted-foreground">Witness the peaceful life of the Lord's cows.</p>
           </div>
           <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -240,7 +240,7 @@ const Gosala = () => {
                 <h2 className="mb-6 font-heading text-3xl font-bold text-foreground">A Spiritual Pilgrimage</h2>
                 <div className="space-y-6">
                   <p className="font-body text-muted-foreground leading-relaxed">
-                    We invite you to visit our Jagannath Gosala and experience the joy of feeding and caring for Gau Mata personally. It is a spiritual experience that brings profound peace and merits. Witnessing the tranquility of the cows and their connection to the Lord's land is a soul-stirring experience for any devotee.
+                    We invite you to visit our Sri Jagannath Gosala and experience the joy of feeding and caring for Gau Mata personally. It is a spiritual experience that brings profound peace and merits. Witnessing the tranquility of the cows and their connection to the Lord's land is a soul-stirring experience for any devotee.
                   </p>
                   <div className="space-y-4">
                     <div className="h-12 flex items-center gap-4">

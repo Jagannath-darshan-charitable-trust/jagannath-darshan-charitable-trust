@@ -7,7 +7,7 @@ const milestones = [
   { 
     year: "2024", 
     title: "Jagannath Gau Seva & Protection",
-    event: "Established our first dedicated Jagannath Gosala, focusing on the protection of indigenous cow breeds. This initiative ensures that pure dairy products are available for temple rituals and malnourished communities." 
+    event: "Established our first dedicated Sri Jagannath Gosala, focusing on the protection of indigenous cow breeds. This initiative ensures that pure dairy products are available for temple rituals and malnourished communities." 
   },
   { 
     year: "2024", 
@@ -41,7 +41,7 @@ const OurMissionVision = () => {
           </p>
 
           <p className="font-body text-lg leading-relaxed text-muted-foreground text-left md:text-justify">
-            We are equally committed to establishing and sustaining well-organized Jagannath Gosala that ensure compassionate care, protection, and dignified living conditions for cows, revered as sacred embodiments of selfless giving. Through structured management, veterinary care, and community participation, we aim to preserve the spiritual and ecological importance of Gau Mata in a world that is rapidly losing touch with this ancient bond.
+            We are equally committed to establishing and sustaining well-organized Sri Jagannath Gosala that ensure compassionate care, protection, and dignified living conditions for cows, revered as sacred embodiments of selfless giving. Through structured management, veterinary care, and community participation, we aim to preserve the spiritual and ecological importance of Gau Mata in a world that is rapidly losing touch with this ancient bond.
           </p>
 
           <p className="font-body text-lg leading-relaxed text-muted-foreground text-left md:text-justify">
@@ -51,7 +51,7 @@ const OurMissionVision = () => {
           <h2 className="font-heading text-2xl font-bold text-foreground text-center md:text-3xl pt-4">Our Vision</h2>
 
           <p className="font-body text-lg leading-relaxed text-muted-foreground text-left md:text-justify">
-            We aspire to see every region of India blessed with a Jagannath Mandir that nurtures bhakti, unity, and spiritual education. Alongside temple construction, our vision includes structured Jagannath Gosala for Gau Seva, ensuring protection, care, and dignity for cows as sacred embodiments of compassion and selfless giving. Our long-term dream is to create a nationwide network of spiritual and humanitarian centers that serve as beacons of hope for the spiritually inclined and the materially deprived alike.
+            We aspire to see every region of India blessed with a Jagannath Mandir that nurtures bhakti, unity, and spiritual education. Alongside temple construction, our vision includes structured Sri Jagannath Gosala for Gau Seva, ensuring protection, care, and dignity for cows as sacred embodiments of compassion and selfless giving. Our long-term dream is to create a nationwide network of spiritual and humanitarian centers that serve as beacons of hope for the spiritually inclined and the materially deprived alike.
           </p>
 
           <p className="font-body text-lg leading-relaxed text-muted-foreground text-left md:text-justify">
