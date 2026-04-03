@@ -4,15 +4,33 @@ const crypto = require("crypto");
 const Razorpay = require("razorpay");
 const Donation = require("../models/Donation");
 
-// Initialize Razorpay instance
-const razorpayInstance = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID,
-  key_secret: process.env.RAZORPAY_KEY_SECRET,
-});
+// Initialize Razorpay instance safely
+let razorpayInstance = null;
+try {
+  if (process.env.RAZORPAY_KEY_ID && process.env.RAZORPAY_KEY_SECRET) {
+    razorpayInstance = new Razorpay({
+      key_id: process.env.RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
+    });
+    console.log("Razorpay initialized successfully");
+  } else {
+    console.warn("Razorpay environment variables are missing. Payment routes are currently disabled.");
+  }
+} catch (error) {
+  console.error("Razorpay initialization error:", error.message);
+}
 
 // POST /api/donations/create-order - Create a Razorpay order
 router.post("/create-order", async (req, res) => {
   try {
+    // Check if Razorpay is initialized
+    if (!razorpayInstance) {
+      return res.status(503).json({
+        success: false,
+        message: "Online payments are currently under maintenance. Please use bank transfer.",
+      });
+    }
+
     const { amount, purpose, type, donorName, donorEmail, donorPhone } = req.body;
 
     // Validate required fields
@@ -77,6 +95,14 @@ router.post("/create-order", async (req, res) => {
 // POST /api/donations/verify - Verify Razorpay payment
 router.post("/verify", async (req, res) => {
   try {
+    // Check if Razorpay is initialized
+    if (!razorpayInstance) {
+      return res.status(503).json({
+        success: false,
+        message: "Payment verification unavailable. Please contact support.",
+      });
+    }
+
     const { razorpay_order_id, razorpay_payment_id, razorpay_signature } = req.body;
 
     // Validate required fields
