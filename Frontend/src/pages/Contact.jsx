@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Heart, HandHeart, Users, HelpCircle, ChevronDown, ChevronUp, Landmark, MessageCircle, Instagram, Facebook, Twitter } from "lucide-react";
+import API_BASE_URL from "../config/api";
 
 const faqs = [
   {
@@ -41,7 +42,7 @@ const Contact = () => {
     setStatus({ loading: true, success: "", error: "" });
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${API_BASE_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -283,4 +284,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
