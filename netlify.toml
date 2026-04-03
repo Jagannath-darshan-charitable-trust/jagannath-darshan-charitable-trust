@@ -1,0 +1,12 @@
+[build]
+  # Target the Frontend directory for the build
+  base = "Frontend"
+  command = "npm run build"
+  publish = "dist"
+
+# Redirects for Single Page Application (SPA) routing
+# This ensures that deep links like /donate work when refreshed
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
